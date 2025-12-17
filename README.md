@@ -1,5 +1,5 @@
 
-### 🚀 Principais Tecnologias Utilizadas
+## 🚀 Principais Tecnologias Utilizadas
 O projeto utiliza as seguintes tecnologias e bibliotecas:
 - React 19 & TypeScript: A base da aplicação, garantindo uma interface robusta e tipagem segura.
 - Tailwind CSS v4: Framework CSS utilitário para um design responsivo, sofisticado e rápido de prototipar.
