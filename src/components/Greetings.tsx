@@ -96,7 +96,7 @@ const Greetings = () => {
                     <h3 className="text-4xl font-bold text-dracula-cyan">
                         <CountUp end={totalPublicRepos} duration={8} />
                     </h3>
-                    <p className="text-xs uppercase opacity-60">Repositórios pessoais</p>
+                    <p className="text-xs uppercase opacity-60">Repositórios públicos</p>
                 </div>
 
                 <div className="text-center">
