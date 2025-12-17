@@ -1,10 +1,10 @@
-
-## 🚀 Principais Tecnologias Utilizadas
-O projeto utiliza as seguintes tecnologias e bibliotecas:
-- React 19 & TypeScript: A base da aplicação, garantindo uma interface robusta e tipagem segura.
-- Tailwind CSS v4: Framework CSS utilitário para um design responsivo, sofisticado e rápido de prototipar.
-- GraphQL & Apollo Client: Utilizado para consumo eficiente de dados, como a integração direta com a API do GitHub para métricas em tempo real.
-- Vite: O bundler de alta performance para um ambiente de desenvolvimento rápido.
-- UI Libraries: Combinação de @radix-ui/react-icons e lucide-react para ícones e componentes acessíveis.
-- Outras Ferramentas: react-countup para efeitos visuais de números e tw-animate-css para animações customizadas.
+🚀 Principais Tecnologias Utilizadas
+React 19 & Vite 7: Versões mais recentes com o novo React Compiler para performance máxima e build instantâneo.
+TypeScript: Tipagem estática rigorosa para garantir um código escalável e seguro.
+Tailwind CSS v4: O novo motor de estilização nativo do Tailwind com variáveis inteligentes.
+Motion: Implementação de animações fluidas e interações contextuais.
+React Router 7: Sistema de rotas de última geração para navegação instantânea.
+GraphQL & Apollo Client: Consumo eficiente de APIs para exibição de métricas e dados em tempo real.
+UI & Componentes: Uso de Radix UI (acessibilidade), Lucide React (iconografia) e React CountUp (números dinâmicos).
+Animações Customizadas: Integração de tw-animate-css e utilitários como CVA e tailwind-merge para componentes dinâmicos.
 
