@@ -41,14 +41,16 @@ const ErrorPage = ({ type = 404, resetErrorBoundary }: ErrorPageProps) => {
       </p>
 
       <div className="flex flex-wrap items-center justify-center gap-4">
+        {type === 404 && (
         <Button 
           variant="default" 
           onClick={() => navigate("/")}
-          className="gap-2"
+          className="gap-2 bg-transparent"
+
         >
           <ArrowLeft className="w-4 h-4" /> Voltar ao início
         </Button>
-
+        )}
         {type === 500 && (
           <Button 
             variant="outline" 

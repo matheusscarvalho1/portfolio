@@ -6,12 +6,14 @@ import { GET_GITHUB_DATA } from '../graphql/queries';
 import Loading from "./common/Loading";
 import type { GitHubRepo, GitHubResponse } from "@/interface/github-interface";
 import profileImg from "/assets/profile.png";
+import { ProfileImage } from "./ProfileImage";
+import ErrorPage from "./common/Error";
 
 const Greetings = () => {
     const { loading, error, data } = useQuery<GitHubResponse>(GET_GITHUB_DATA);
 
     if (loading) return (<Loading />);
-    if (error) return (<p className="text-dracula-secondary">Erro ao carregar dados do GitHub</p>);
+    if (error) return (<ErrorPage type={500} />);
 
     const totalPublicRepos = data?.viewer.repositories.totalCount || 0;
     const commits = data?.viewer.repositories.nodes
@@ -73,11 +75,7 @@ const Greetings = () => {
                     </Button>
                 </div>
             </div>
-                <img 
-                    src={profileImg} 
-                    alt="Matheus Carvalho" 
-                    className=" bg-transparentw-64 h-64 rounded-full object-cover border-4 border-dracula-current shadow-[0_0_30px_rgba(189,147,249,0.2)]" 
-                />
+                <ProfileImage src={profileImg} alt="Matheus Carvalho" />
             </div>
             <div className="flex flex-wrap gap-12 mt-20 justify-center">
                 <div className="text-center">
