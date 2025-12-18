@@ -101,7 +101,7 @@ const Greetings = () => {
 
                 <div className="text-center">
                     <h3 className="text-4xl font-bold text-dracula-secondary">
-                        <CountUp end={totalCommitsGlobal} duration={8} separator="." />
+                        +<CountUp end={totalCommitsGlobal} duration={8} separator="." />
                     </h3>
                     <p className="text-xs uppercase opacity-60">Commits</p>
                 </div>
