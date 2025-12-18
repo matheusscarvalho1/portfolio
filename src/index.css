@@ -20,6 +20,25 @@
     animation: loading-dots 1.5s infinite steps(3);
   }
 
+  .custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(40, 42, 54, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6272a4;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #bd93f9;
+}
+
 @theme inline {
   --font-jetbrains: 'JetBrains Mono', monospace;
 

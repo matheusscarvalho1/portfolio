@@ -3,13 +3,13 @@ import { AlertCircle, FileQuestion, ArrowLeft, RotateCcw } from "lucide-react";
 import { Button } from "../ui/button";
 
 interface ErrorPageProps {
-  type?: 404 | 500;
+  statusCode?: 404 | 500;
   resetErrorBoundary?: () => void; // Caso use react-error-boundary
 }
 
-const ErrorPage = ({ type = 404, resetErrorBoundary }: ErrorPageProps) => {
+const ErrorPage = ({ statusCode = 404, resetErrorBoundary }: ErrorPageProps) => {
   const navigate = useNavigate();
-  const is404 = type === 404;
+  const is404 = statusCode === 404;
 
   const content = {
     title: is404 ? "Página não encontrada" : "Erro inesperado",
@@ -41,7 +41,7 @@ const ErrorPage = ({ type = 404, resetErrorBoundary }: ErrorPageProps) => {
       </p>
 
       <div className="flex flex-wrap items-center justify-center gap-4">
-        {type === 404 && (
+        {statusCode === 404 && (
         <Button 
           variant="default" 
           onClick={() => navigate("/")}
@@ -51,7 +51,7 @@ const ErrorPage = ({ type = 404, resetErrorBoundary }: ErrorPageProps) => {
           <ArrowLeft className="w-4 h-4" /> Voltar ao início
         </Button>
         )}
-        {type === 500 && (
+        {statusCode === 500 && (
           <Button 
             variant="outline" 
             onClick={() => resetErrorBoundary ? resetErrorBoundary() : window.location.reload()}

@@ -16,6 +16,11 @@ interface NavLinkProps {
 const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+
+  const handleCloseMenu = () => {
+    setIsOpen(false)
+  }
+
   // Tipando a função de estilo
   const linkStyle = ({ isActive }: NavLinkProps): string => 
     isActive 
@@ -36,7 +41,7 @@ const MobileNav: React.FC = () => {
         
         <SheetContent 
           side="right" 
-          className="bg-dracula-bg border-dracula-current text-dracula-text w-[70%] sm:w-75"
+          className="bg-dracula-bg border-dracula-current text-dracula-text w-[70%] sw-75"
         >
           <SheetHeader>
             <SheetTitle className="text-dracula-cyan font-jetbrains tracking-widest text-left border-b border-dracula-current pb-4 mt-4">
@@ -46,27 +51,27 @@ const MobileNav: React.FC = () => {
           
           <ul className="flex flex-col gap-8 mt-10">
             <li>
-              <NavLink to="/" onClick={() => setIsOpen(false)} className={linkStyle}>
+              <NavLink to="/" onClick={handleCloseMenu} className={linkStyle}>
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" onClick={() => setIsOpen(false)} className={linkStyle}>
+              <NavLink to="/services" onClick={handleCloseMenu} className={linkStyle}>
                 Serviços
               </NavLink>
             </li>
             <li>
-              <NavLink to="/curriculum" onClick={() => setIsOpen(false)} className={linkStyle}>
+              <NavLink to="/curriculum" onClick={handleCloseMenu} className={linkStyle}>
                 Currículo
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" onClick={() => setIsOpen(false)} className={linkStyle}>
+              <NavLink to="/projects" onClick={handleCloseMenu} className={linkStyle}>
                 Projetos
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={() => setIsOpen(false)} className={linkStyle}>
+              <NavLink to="/contact" onClick={handleCloseMenu} className={linkStyle}>
                 Contato
               </NavLink>
             </li>

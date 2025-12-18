@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-dracula-bg font-jetbrains">
+    <div className="font-jetbrains ">
       <Header />
         <Outlet />
       <Footer />

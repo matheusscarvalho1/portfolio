@@ -1,9 +1,9 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
-import MobileNav from "./MobileNav"; // Importe o componente que criamos acima
+import MobileNav from "./MobileNav";
 
 const Header = () => {
-  const baseLink = "transition-all duration-300 hover:text-dracula-cyan text-sm tracking-widest uppercase font-jetbrains";
+  const baseLink = "transition-all duration-300 hover:text-dracula-cyan text-sm tracking-widest uppercase";
   const activeLink = "text-dracula-secondary md:border-b-2 md:border-dracula-secondary md:pb-1 font-bold";
 
   return (
@@ -14,14 +14,11 @@ const Header = () => {
                     <motion.img 
                         src="/assets/logo.png" 
                         alt="Logo Desenvolvedor" 
-                        /* Aumentado de w-12/h-12 para w-16/h-16 */
                         className="w-16 h-16 object-contain cursor-pointer"
                         
-                        // Estado Inicial e Entrada
                         initial={{ opacity: 0, y: 10, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         
-                        // O "Hover" leve e contextual (escala 1.1 para o novo tamanho)
                         whileHover={{ scale: 1.1, y: -3 }}
                         whileTap={{ scale: 0.95 }}
                         

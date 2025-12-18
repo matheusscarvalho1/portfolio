@@ -27,10 +27,10 @@ createRoot(document.getElementById('root')!).render(
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
             </Route>
-             <Route path="*" element={<ErrorPage type={404} />} />
+            <Route path="*" element={<ErrorPage statusCode={404} />} />
           </Routes>
         </ApolloProvider>
-    </Suspense>
+      </Suspense>
     </BrowserRouter>
   </StrictMode>,
 )
