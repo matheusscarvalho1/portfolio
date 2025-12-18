@@ -135,13 +135,13 @@ const Curriculum = () => {
                 <h4 className="text-dracula-secondary font-bold uppercase text-xs tracking-widest">Expertise Técnica</h4>
                 <p className="opacity-80 text-sm">
                     Domínio em ferramentas como <strong>Docker, PostgreSQL, ORMs como Prisma e Drizzle, Tailwind CSS e shadcn UI</strong> entre outras habilidades onde especifico na seção habilidades. 
-                    Trabalho orientado a resultados, utilizando <strong>Clean Code, Gitflow e metodologias Ágeis (Scrum/Kanban)</strong> 
+                    Trabalho orientado a resultados, utilizando <strong>Clean Code, Gitflow e metodologias Ágeis (Scrum/Kanban){""} </strong>
                     para garantir entregas contínuas e código de alta qualidade.
                 </p>
             </div>
 
             <div className="bg-dracula-bg/30 p-6 rounded-2xl border border-white/5">
-                <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Qualidades Pessoais</h4>
+                <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
                 <div className="flex flex-wrap gap-2">
                     {[
                         "Foco em UX", "Comunicação Clara", "Resolução de Problemas", 
