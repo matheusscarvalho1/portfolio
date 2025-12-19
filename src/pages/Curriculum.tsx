@@ -38,6 +38,8 @@ import {
   SiMongodb, 
   SiPostman,
   SiGraphql,
+  SiPrisma,
+  SiDrizzle
 } from "react-icons/si";
 import { DownloadIcon } from "lucide-react";
 import { ResumeItem } from "@/components/TimelineItem";
@@ -280,6 +282,8 @@ const Curriculum = () => {
                         { icon: <SiExpress />, name: "Express", color: "group-hover:text-yellow-100" },
                         { icon: <SiPostgresql />, name: "PostgreSQL / SQL", color: "group-hover:text-blue-300" },
                         { icon: <SiMongodb />, name: "MongoDB / NoSQL", color: "group-hover:text-green-300" },
+                        { icon: <SiPrisma />, name: "Prisma", color: "group-hover:text-purple-400" },
+                        { icon: <SiDrizzle />, name: "Drizzle", color: "group-hover:text-green-400" },
                         { icon: <SiDocker />, name: "Docker", color: "group-hover:text-blue-400" },
                         { icon: <SiPython />, name: "Python", color: "group-hover:text-blue-500" },
                         { icon: <SiPhp />, name: "PHP", color: "group-hover:text-blue-400" },
