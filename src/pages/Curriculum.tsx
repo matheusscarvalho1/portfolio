@@ -331,7 +331,7 @@ const Curriculum = () => {
         <h3 className="text-3xl font-bold text-dracula-secondary">Educação & Certificados</h3>
         <div className="border-l-2 border-dracula-secondary/30 pl-6 space-y-10">
             <ResumeItem 
-                date="2018 - 2023"
+                date="Outubro 2017 - Julho 2023"
                 title="Graduação em Engenharia de Computação"
                 subtitle="UFMT — Universidade Federal de Mato Grosso"
                 link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1706397535563/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
