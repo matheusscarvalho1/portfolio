@@ -248,7 +248,7 @@ const Curriculum = () => {
                         { icon: <SiTypescript />, name: "TypeScript", color: "group-hover:text-blue-400" },
                         { icon: <FaJs />, name: "JavaScript", color: "group-hover:text-yellow-400" },
                         { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "group-hover:text-dracula-cyan" },
-                        { icon: <SiStyledcomponents />, name: "Styled", color: "group-hover:text-pink-400" },
+                        { icon: <SiStyledcomponents />, name: "Styled Components", color: "group-hover:text-pink-400" },
                         { icon: <FaBootstrap />, name: "Bootstrap", color: "group-hover:text-purple-500" },
                         { icon: <SiJquery />, name: "jQuery", color: "group-hover:text-blue-500" },
                         { icon: <SiRedux />, name: "Redux", color: "group-hover:text-purple-400" },
