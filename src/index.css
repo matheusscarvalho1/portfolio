@@ -50,6 +50,7 @@
   --color-dracula-cyan: #8be9fd;      /* Ciano */
   --color-dracula-green: #5BAE80;     /* Verde (Sucesso/Commits) */
   --color-dracula-orange: #ffb86c;    /* Laranja */
+  --color-dracula-red: #ff5555; 
 
   --animate-terminal-blink: terminal-blink 1s step-end infinite;
  

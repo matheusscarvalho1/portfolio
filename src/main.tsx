@@ -1,11 +1,14 @@
 import { lazy, StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Routes, Route, BrowserRouter } from "react-router";
-import './index.css'
-import Loading from './components/common/Loading';
+import '@/index.css'
+import Loading from '@/components/common/Loading';
 import { ApolloProvider } from "@apollo/client/react";
-import { client } from './apollo/client';
-import Layout from "./components/common/Layout"; 
+import { client } from '@/apollo/client';
+import Layout from "@/components/common/Layout"; 
+import { Toaster } from "@/components/ui/sonner"
+
+
 
 const Home = lazy(() => import('@/pages/Home'))
 const Services = lazy(() => import('@/pages/Services'))
@@ -16,6 +19,7 @@ const ErrorPage = lazy(() => import('@/components/common/Error'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <Toaster position="bottom-right" richColors gap={20} offset={75} />
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
         <ApolloProvider client={client}>

@@ -8,3 +8,7 @@
 - UI & Componentes: Uso de Radix UI (acessibilidade), Lucide React (iconografia) e React CountUp (números dinâmicos).
 - Animações Customizadas: Integração de tw-animate-css e utilitários como CVA e tailwind-merge para componentes dinâmicos.
 
+# Integrações
+- GraphQL
+- Web3Forms - Captação de contatos através do portfólio na aba contatos, cai direto no meu e-mail.
+
