@@ -42,6 +42,7 @@ const Contact = () => {
   const onSubmit = async (data: ContactFormData) => {
     try {
 
+    /* Trocar depois para uma Chave vinculada ao domínio e não ao localhost*/
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     const formData = new FormData();
     formData.append("access_key", accessKey);
@@ -54,7 +55,7 @@ const Contact = () => {
     formData.append("email", data.email);
     formData.append("message", data.message);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch(import.meta.env.VITE_WEB3FORMS_API_URL, {
         method: "POST",
         body: formData,
 });    

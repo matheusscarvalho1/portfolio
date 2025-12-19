@@ -19,7 +19,7 @@ const ErrorPage = lazy(() => import('@/components/common/Error'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Toaster position="bottom-right" richColors gap={20} offset={75} />
+    <Toaster position="bottom-right" richColors />
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
         <ApolloProvider client={client}>
