@@ -72,8 +72,7 @@ const Contact = () => {
     }
   };
 
-  const inputStyles = "bg-dracula-bg border-2 border-dracula-current rounded-xl focus-visible:ring-0 focus-visible:ring-offset-0 focus:border-dracula-orange outline-none transition-all placeholder:text-white/20";
-
+  const inputStyles = "bg-dracula-bg border-2 border-dracula-current rounded-xl focus-visible:outline-none focus-visible:ring-0 focus-visible:border-dracula-orange outline-none transition-all placeholder:text-white/20";
   return (
     <main className="min-h-screen bg-dracula-bg text-dracula-text p-6 md:p-12 font-jetbrains flex items-center justify-center">
       <div className="max-w-6xl w-full flex flex-col xl:flex-row gap-12 xl:gap-20">
@@ -190,9 +189,9 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 disabled={form.formState.isSubmitting}
-                className="w-full h-14 bg-dracula-green text-dracula-bg font-bold rounded-xl hover:bg-dracula-green/80 transition-all gap-2"
+                className="w-full h-14 bg-dracula-green text-dracula-bg font-bold rounded-xl hover:bg-dracula-green/80 transition-all gap-2 uppercase"
               >
-                {form.formState.isSubmitting ? "Enviando..." : "ENVIAR MENSAGEM"} <Send size={18} />
+                {form.formState.isSubmitting ? "Enviando..." : "Enviar mensagem"} <Send size={18} />
               </Button>
             </form>
           </Form>
