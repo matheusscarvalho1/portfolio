@@ -83,7 +83,7 @@ const Curriculum = () => {
         >
             <a 
                 href="/matheus-scarvalho-cv.pdf" 
-                download
+                download="matheus-scarvalho-cv.pdf"
             >
                 DOWNLOAD CV COMPLETO <DownloadIcon className="ml-3 w-5 h-5" />
             </a>
