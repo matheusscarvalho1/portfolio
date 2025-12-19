@@ -282,8 +282,8 @@ const Curriculum = () => {
                         { icon: <SiExpress />, name: "Express", color: "group-hover:text-yellow-100" },
                         { icon: <SiPostgresql />, name: "PostgreSQL / SQL", color: "group-hover:text-blue-300" },
                         { icon: <SiMongodb />, name: "MongoDB / NoSQL", color: "group-hover:text-green-300" },
-                        { icon: <SiPrisma />, name: "Prisma", color: "group-hover:text-purple-400" },
-                        { icon: <SiDrizzle />, name: "Drizzle", color: "group-hover:text-green-400" },
+                        { icon: <SiPrisma />, name: "Prisma ORM", color: "group-hover:text-purple-400" },
+                        { icon: <SiDrizzle />, name: "Drizzle ORM", color: "group-hover:text-green-400" },
                         { icon: <SiDocker />, name: "Docker", color: "group-hover:text-blue-400" },
                         { icon: <SiPython />, name: "Python", color: "group-hover:text-blue-500" },
                         { icon: <SiPhp />, name: "PHP", color: "group-hover:text-blue-400" },
@@ -311,7 +311,7 @@ const Curriculum = () => {
                 </h4>
                 <div className="flex flex-wrap justify-center gap-3">
                     {[
-                        "APIs RESTful", "Apollo Client", "Framer Motion","Zod", "React Hook Form", "TanStack Query / React Query ", "Context API", "Zustand", "Vite", "Webpack", "ESLint", "Prettier", "Agentes de IA", "MCPs", "Prisma ORM", "Drizzle ORM", "Jest", "React Testing Library (RTL)",
+                        "APIs RESTful", "Apollo Client", "Framer Motion","Zod", "React Hook Form", "TanStack Query / React Query ", "Context API", "Zustand", "Vite", "Webpack", "ESLint", "Prettier", "Agentes de IA", "MCPs", "Jest", "Vitest", "React Testing Library (RTL)",
                         "CI/CD", "GitHub Actions", "Gitflow", "API REST", "JWT", "OAuth2", 
                         "Clean Code", "Microsserviços", "Sistemas Distribuídos"
                     ].map((tag) => (
