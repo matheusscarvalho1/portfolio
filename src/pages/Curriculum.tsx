@@ -82,7 +82,7 @@ const Curriculum = () => {
             className="w-full h-16 border-2 border-dracula-primary text-dracula-primary hover:bg-dracula-primary hover:text-dracula-bg font-bold transition-all shadow-[0_0_15px_rgba(255,121,198,0.1)] hover:shadow-[0_0_20px_rgba(255,121,198,0.3)]"
         >
             <a 
-                href="/ATS_CV_Matheus_Carvalho_Desenvolvedor_Front_End_2025_V7.pdf" 
+                href="/matheus-scarvalho-cv.pdf" 
                 download
             >
                 DOWNLOAD CV COMPLETO <DownloadIcon className="ml-3 w-5 h-5" />

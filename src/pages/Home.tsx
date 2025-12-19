@@ -51,8 +51,8 @@ const Greetings = () => {
                             className="h-12 px-6 text-md bg-transparent border-dracula-green text-dracula-green hover:bg-dracula-green hover:text-dracula-bg transition-all font-bold border-2"
                         >
                             <a 
-                                href="/ATS_CV_Matheus_Carvalho_Desenvolvedor_Front_End_2025_V7.pdf" 
-                                download="ATS_CV_Matheus_Carvalho_Desenvolvedor_Front_End_2025_V7.pdf"
+                                href="/matheus-scarvalho-cv.pdf" 
+                                download="matheus-scarvalho-cv.pdf"
                             >
                                 DOWNLOAD CV <DownloadIcon className="w-5 h-5 ml-2" />
                             </a>
