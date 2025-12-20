@@ -116,7 +116,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-xs text-white/40 uppercase tracking-widest">Localização</p>
-                <p className="text-lg font-bold">Varzea Grande, Mato Grosso - Brasil</p>
+                <p className="text-lg font-bold">Várzea Grande, Mato Grosso - Brasil</p>
               </div>
             </div>
           </div>
