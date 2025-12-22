@@ -40,7 +40,7 @@ const Contact = () => {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    try {
+  
 
     /* Trocar depois para uma Chave vinculada ao domínio e não ao localhost*/
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
@@ -67,9 +67,7 @@ const Contact = () => {
     }  else {
         toast.error("Erro ao enviar a mensagem. Tente novamente mais tarde.");
     } 
-    } catch (error){
-        toast.error("Erro de conexão com o servidor.");
-    }
+    
   };
 
   const inputStyles = "bg-dracula-bg border-2 border-dracula-current rounded-xl focus-visible:outline-none focus-visible:ring-0 focus-visible:border-dracula-orange outline-none transition-all placeholder:text-white/20";
