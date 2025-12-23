@@ -27,7 +27,7 @@ const Services = () => {
                     <ServiceCard
                         icon={<FaNodeJs />}
                         title="Desenvolvimento Back-End"
-                        description="Arquitetura e desenvolvimento de APIs RESTful robustas com Node.js e Fastify. Integração com PostgreSQL, Prisma e Docker."
+                        description="Arquitetura e desenvolvimento de APIs RESTful e GraphQL robustas com Node.js, Express e Fastify. Integração com PostgreSQL, Prisma e Docker."
                         color="text-dracula-green"
                     />
                     <ServiceCard
@@ -45,7 +45,7 @@ const Services = () => {
                     <ServiceCard
                         icon={<TbApi />}
                         title="Integração de Sistemas"
-                        description="Especialista em integrar diferentes sistemas internos e externos, criando soluções de integrações e até automações através de scripts."
+                        description="Experiência em integrar diferentes sistemas internos e externos, criando soluções de integrações e até automações através de scripts."
                         color="text-dracula-pink"
                     />
                     <ServiceCard

@@ -126,7 +126,7 @@ const Curriculum = () => {
         </div>
         <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-orange/20">
             <span className="text-2xl font-bold text-dracula-orange">+50%</span>
-            <p className="text-[10px] uppercase opacity-60">Otimização de Processos Internos (BPM)</p>
+            <p className="text-[10px] uppercase opacity-60">Otimização de tempo de Processos Internos (BPM)</p>
         </div>
     </div>
 
@@ -182,7 +182,7 @@ const Curriculum = () => {
                     <p className="text-dracula-secondary font-semibold text-sm">Ginco Urbanismo • Cuiabá/MT - Híbrido</p>
                     
                     <p className="text-xs md:text-sm opacity-60 mt-1 mb-4 italic">
-                        Node.js | TypeScript | Fastify | Express | Prisma ORM | Jest | Swagger
+                        Node.js | TypeScript | Fastify | Express | Next.js | Prisma ORM | Jest | Swagger
                     </p>
                     
                     <ul className="space-y-3 text-sm opacity-80 leading-relaxed">
