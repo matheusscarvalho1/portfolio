@@ -44,39 +44,44 @@ import {
 import { DownloadIcon } from "lucide-react";
 import { ResumeItem } from "@/components/TimelineItem";
 
+type ViewOption = 'sobre-mim' | 'experiencia' | 'habilidades' | 'formacao';
+
+
 const Curriculum = () => {
-    const [view, setView] = useState<'sobre-mim' | 'experiencia' | 'habilidades' | 'formacao'>('sobre-mim');
+    const [view, setView] = useState<ViewOption>('sobre-mim');
+
+    const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
+        { id: "sobre-mim", label: "Sobre Mim", icon: <PersonIcon /> },
+        { id: "experiencia", label: "Experiência", icon: <BackpackIcon /> },
+        { id: "habilidades", label: "Habilidades", icon: <CodeIcon /> },
+        { id: "formacao", label: "Formação", icon: <ShadowIcon /> }
+    ];
 
     return (
         <main className="flex flex-col justify-center items-center p-6 md:p-8 bg-dracula-bg text-dracula-text min-h-screen">
             <div className="flex flex-col xl:flex-row items-start gap-10 md:gap-20 max-w-6xl w-full">
                 <div className="flex flex-col gap-4 w-full xl:w-1/3">
-    <h1 className="text-3xl font-bold mb-6 text-center xl:text-left">
-        Meu <span className="text-dracula-secondary">Currículo</span>
-    </h1>
-    <div className="flex flex-col gap-4">
-        {[
-            { id: "sobre-mim", label: "Sobre Mim", icon: <PersonIcon /> },
-            { id: "experiencia", label: "Experiência", icon: <BackpackIcon /> },
-            { id: "habilidades", label: "Habilidades", icon: <CodeIcon /> },
-            { id: "formacao", label: "Formação", icon: <ShadowIcon /> }
-        ].map((item) => (
-<Button
-    key={item.id}
-    onClick={() => setView(item.id as any)}
-    variant="outline"
-    className={`h-16 justify-between text-lg border-2 transition-all font-bold 
-        ${view === item.id 
-            ? "border-dracula-green text-dracula-green bg-dracula-current hover:bg-dracula-current hover:text-dracula-green" 
-            : "border-dracula-current opacity-60 bg-transparent text-dracula-text hover:opacity-100 hover:bg-dracula-current/40 hover:text-dracula-green hover:border-dracula-green/50"
-        }`}>
-    <span className="flex items-center gap-4">
-        {item.icon} {item.label}
-    </span>
-    {view === item.id && <ChevronRightIcon className="w-6 h-6" />}
-</Button>
-))}
-    </div>
+                    <h1 className="text-3xl font-bold mb-6 text-center xl:text-left">
+                        Meu <span className="text-dracula-secondary">Currículo</span>
+                    </h1>
+                    <div className="flex flex-col gap-4">
+                        {navItems.map((item) => (
+                        <Button
+                            key={item.id}
+                            onClick={() => setView(item.id)}
+                            variant="outline"
+                            className={`h-16 justify-between text-lg border-2 transition-all font-bold 
+                                ${view === item.id 
+                                    ? "border-dracula-green text-dracula-green bg-dracula-current hover:bg-dracula-current hover:text-dracula-green" 
+                                    : "border-dracula-current opacity-60 bg-transparent text-dracula-text hover:opacity-100 hover:bg-dracula-current/40 hover:text-dracula-green hover:border-dracula-green/50"
+                                }`}>
+                            <span className="flex items-center gap-4">
+                                {item.icon} {item.label}
+                            </span>
+                            {view === item.id && <ChevronRightIcon className="w-6 h-6" />}
+                        </Button>
+                        ))}
+                    </div>
     <div className="mt-4 pt-6 border-t border-white/10">
         <Button 
             asChild 
@@ -113,17 +118,17 @@ const Curriculum = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-green/20">
                 <span className="text-2xl font-bold text-dracula-green">+60%</span>
-                <p className="text-[10px] uppercase opacity-60">Produtividade em Equipes</p>
+                <p className="text-[10px] uppercase opacity-60">Aumento de Produtividade com Automação</p>
             </div>
-            <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-cyan/20">
-                <span className="text-2xl font-bold text-dracula-cyan">-25%</span>
-                <p className="text-[10px] uppercase opacity-60">Tempo de Carregamento</p>
-            </div>
-            <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-orange/20">
-                <span className="text-2xl font-bold text-dracula-orange">+50%</span>
-                <p className="text-[10px] uppercase opacity-60">Otimização de Processos</p>
-            </div>
+        <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-cyan/20">
+            <span className="text-2xl font-bold text-dracula-cyan">-25%</span>
+            <p className="text-[10px] uppercase opacity-60">Redução no Tempo de Carregamento de Apps Web</p>
         </div>
+        <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-orange/20">
+            <span className="text-2xl font-bold text-dracula-orange">+50%</span>
+            <p className="text-[10px] uppercase opacity-60">Otimização de Processos Internos (BPM)</p>
+        </div>
+    </div>
 
         <div className="max-h-125 overflow-y-auto pr-4 custom-scrollbar space-y-6 text-sm md:text-base leading-relaxed text-balance">
             <p className="opacity-90">
