@@ -6,6 +6,8 @@ import MONIFOREST from "/assets/MONIFOREST-03-4x.png"
 import FINDHOPE from "/assets/HOPE-03.png"
 import MONEY from "/assets/MONEY-04-4x.png"
 import COURSESAPI from "/assets/FASTIFY-APIs.png"
+import AUTH from "/assets/AUTH-SYSTEM.png"
+import APICLIENT from "/assets/API-CLIENT.png"
 
 interface ProjectData {
     id: number;
@@ -192,7 +194,7 @@ export const projectsData: ProjectData[] = [
             "Zod",
             "Radix UI"
         ],
-        image: "/images/auth-system-ui.png",
+        image: AUTH,
         githubUrl: "https://github.com/matheusscarvalho1/form-login-consuming-api-jwt-express",
         liveUrl: "https://form-login-consuming-api-jwt-express.onrender.com/",
     },
@@ -211,7 +213,7 @@ export const projectsData: ProjectData[] = [
             "Zod",
             "Clean Architecture"
         ],
-        image: "/images/auth-api-preview.png",
+        image: APICLIENT,
         githubUrl: "https://github.com/matheusscarvalho1/api-jwt-express", 
         liveUrl: "https://github.com/matheusscarvalho1/api-jwt-express", 
     },
