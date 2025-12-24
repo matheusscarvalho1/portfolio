@@ -200,7 +200,7 @@ export const projectsData: ProjectData[] = [
     },
     {
         id: 10,
-        title: "Auth API (Back-End) — Backend JWT & Express",
+        title: "Auth API (Back-End) — Backend JWT & Express [SOB AJUSTES]",
         description: "API RESTful robusta desenvolvida com Node.js e Express para gerenciamento seguro de identidades. Implementa criptografia de senhas com BcryptJS, modelagem de dados via Prisma ORM e proteção de endpoints utilizando middlewares de autenticação JWT, garantindo que apenas usuários autorizados acessem recursos sensíveis.",
         tags: [
             "Node.js",
