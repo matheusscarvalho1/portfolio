@@ -1,5 +1,3 @@
-"use client";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -41,8 +39,6 @@ const Contact = () => {
 
   const onSubmit = async (data: ContactFormData) => {
   
-
-    /* Trocar depois para uma Chave vinculada ao domínio e não ao localhost*/
     const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
     const formData = new FormData();
     formData.append("access_key", accessKey);
