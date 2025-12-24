@@ -7,11 +7,9 @@ interface ServiceCardProps {
     color: string;
 }
 
-// Componente para um Card de Serviço reutilizável
+
 const ServiceCard = ({ icon, title, description, color }: ServiceCardProps) => (
-    // Substitua a <div> por <motion.div>
     <motion.div 
-        // Animação de entrada: começa invisível e ligeiramente abaixo, então move-se para a posição final
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 2, y: 0 }}
         transition={{ ease: "easeOut" }}

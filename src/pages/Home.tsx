@@ -4,10 +4,26 @@ import CountUp from 'react-countup';
 import { useQuery } from "@apollo/client/react";
 import { GET_GITHUB_DATA } from '../graphql/queries';
 import Loading from "@/components/common/Loading";
-import type { GitHubRepo, GitHubResponse } from "@/interface/github-interface";
-import profileImg from "/assets/profile.png";
+import profileImg from "/assets/PROFILE.png";
 import { ProfileImage } from "@/components/ProfileImage";
 import ErrorPage from "@/components/common/Error";
+
+export interface GitHubRepo {
+  defaultBranchRef: {
+    target: {
+      history: { totalCount: number };
+    };
+  } | null;
+}
+
+export interface GitHubResponse {
+  viewer: {
+    repositories: {
+      totalCount: number;
+      nodes: GitHubRepo[];
+    };
+  };
+}
 
 const Greetings = () => {
     const { loading, error, data } = useQuery<GitHubResponse>(GET_GITHUB_DATA);
@@ -93,7 +109,7 @@ const Greetings = () => {
                 </div>
                 <div className="text-center min-w-30">
                     <h3 className="text-4xl md:text-5xl font-bold text-dracula-orange mb-1">
-                        +<CountUp end={8} duration={8} />
+                        +<CountUp end={6} duration={8} />
                     </h3>
                     <p className="text-[10px] md:text-xs uppercase tracking-widest opacity-60 font-medium leading-tight">Projetos <br/> robustos</p>
                 </div>

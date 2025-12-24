@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 interface ErrorPageProps {
   statusCode?: 404 | 500;
-  resetErrorBoundary?: () => void; // Caso use react-error-boundary
+  resetErrorBoundary?: () => void; 
 }
 
 const ErrorPage = ({ statusCode = 404, resetErrorBoundary }: ErrorPageProps) => {

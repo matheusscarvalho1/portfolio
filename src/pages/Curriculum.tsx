@@ -46,6 +46,12 @@ import { ResumeItem } from "@/components/TimelineItem";
 
 type ViewOption = 'sobre-mim' | 'experiencia' | 'habilidades' | 'formacao';
 
+ interface Skill {
+    icon: React.ReactNode;
+    name: string;
+    color: string;
+}
+
 
 const Curriculum = () => {
     const [view, setView] = useState<ViewOption>('sobre-mim');
@@ -57,6 +63,74 @@ const Curriculum = () => {
         { id: "formacao", label: "Formação", icon: <ShadowIcon /> }
     ];
 
+    const skillsFrontStack: Skill[] = [
+    { icon: <FaReact />, name: "React / Native", color: "group-hover:text-dracula-cyan" },
+    { icon: <SiNextdotjs />, name: "Next.js", color: "group-hover:text-white" },
+    { icon: <SiTypescript />, name: "TypeScript", color: "group-hover:text-blue-400" },
+    { icon: <FaJs />, name: "JavaScript", color: "group-hover:text-yellow-400" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "group-hover:text-dracula-cyan" },
+    { icon: <SiStyledcomponents />, name: "Styled Components", color: "group-hover:text-pink-400" },
+    { icon: <FaBootstrap />, name: "Bootstrap", color: "group-hover:text-purple-500" },
+    { icon: <SiJquery />, name: "jQuery", color: "group-hover:text-blue-500" },
+    { icon: <SiRedux />, name: "Redux", color: "group-hover:text-purple-400" },
+    { icon: <FaHtml5 />, name: "HTML5", color: "group-hover:text-dracula-orange" },
+    { icon: <FaCss3 />, name: "CSS3 / SASS", color: "group-hover:text-blue-400" },
+    { icon: <FaFigma />, name: "Figma", color: "group-hover:text-dracula-pink" },
+    ];
+
+    const skillsBackStack: Skill[] = [
+    { icon: <FaNodeJs />, name: "Node.js", color: "group-hover:text-dracula-green" },
+    { icon: <SiFastify />, name: "Fastify", color: "group-hover:text-white" },
+    { icon: <SiExpress />, name: "Express", color: "group-hover:text-yellow-100" },
+    { icon: <SiPostgresql />, name: "PostgreSQL / SQL", color: "group-hover:text-blue-300" },
+    { icon: <SiMongodb />, name: "MongoDB / NoSQL", color: "group-hover:text-green-300" },
+    { icon: <SiPrisma />, name: "Prisma ORM", color: "group-hover:text-purple-400" },
+    { icon: <SiDrizzle />, name: "Drizzle ORM", color: "group-hover:text-green-400" },
+    { icon: <SiDocker />, name: "Docker", color: "group-hover:text-blue-400" },
+    { icon: <SiPython />, name: "Python", color: "group-hover:text-blue-500" },
+    { icon: <SiPhp />, name: "PHP", color: "group-hover:text-blue-400" },
+    { icon: <SiPostman />, name: "Postman", color: "group-hover:text-yellow-400" },
+    { icon: <SiGraphql />, name: "GraphQL", color: "group-hover:text-pink-600" },
+    { icon: <FaGit />, name: "Git", color: "group-hover:text-dracula-orange" },
+    { icon: <FaGithub />, name: "GitHub", color: "group-hover:text-dracula-purple" },
+    ];
+
+    const LibTechniques: string[] = [
+    "APIs RESTful", 
+    "Apollo Client", 
+    "Framer Motion",
+    "Zod", 
+    "React Hook Form", 
+    "TanStack Query / React Query", 
+    "Context API", 
+    "Zustand", 
+    "Vite", 
+    "Webpack", 
+    "ESLint", 
+    "Prettier", 
+    "Agentes de IA", 
+    "MCPs", 
+    "Jest", 
+    "Vitest", 
+    "React Testing Library (RTL)",
+    "CI/CD", 
+    "GitHub Actions", 
+    "Gitflow", 
+    "API REST", 
+    "JWT", 
+    "OAuth2", 
+    "Clean Code", 
+    "Microsserviços", 
+    "Sistemas Distribuídos"
+    ];
+    
+    const softSkills: string[] = [
+    "Foco em UX", 
+    "Comunicação Clara", 
+    "Resolução de Problemas", 
+    "Aprendizado Rápido", 
+    "Compromisso com Qualidade"
+];
     return (
         <main className="flex flex-col justify-center items-center p-6 md:p-8 bg-dracula-bg text-dracula-text min-h-screen">
             <div className="flex flex-col xl:flex-row items-start gap-10 md:gap-20 max-w-6xl w-full">
@@ -114,7 +188,6 @@ const Curriculum = () => {
                 // Desenvolvedor Front-End & Full Stack
             </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             <div className="bg-dracula-bg/50 p-4 rounded-xl border border-dracula-green/20">
                 <span className="text-2xl font-bold text-dracula-green">+60%</span>
@@ -150,10 +223,7 @@ const Curriculum = () => {
             <div className="bg-dracula-bg/30 p-6 rounded-2xl border border-white/5">
                 <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
                 <div className="flex flex-wrap gap-2">
-                    {[
-                        "Foco em UX", "Comunicação Clara", "Resolução de Problemas", 
-                        "Aprendizado Rápido", "Compromisso com Qualidade"
-                    ].map((tag) => (
+                    {softSkills.map((tag) => (
                         <span key={tag} className="px-3 py-1 bg-dracula-current text-[10px] rounded-full border border-white/10">
                             {tag}
                         </span>
@@ -249,20 +319,7 @@ const Curriculum = () => {
                     Front-End & Mobile
                 </h4>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
-                    {[
-                        { icon: <FaReact />, name: "React / Native", color: "group-hover:text-dracula-cyan" },
-                        { icon: <SiNextdotjs />, name: "Next.js", color: "group-hover:text-white" },
-                        { icon: <SiTypescript />, name: "TypeScript", color: "group-hover:text-blue-400" },
-                        { icon: <FaJs />, name: "JavaScript", color: "group-hover:text-yellow-400" },
-                        { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "group-hover:text-dracula-cyan" },
-                        { icon: <SiStyledcomponents />, name: "Styled Components", color: "group-hover:text-pink-400" },
-                        { icon: <FaBootstrap />, name: "Bootstrap", color: "group-hover:text-purple-500" },
-                        { icon: <SiJquery />, name: "jQuery", color: "group-hover:text-blue-500" },
-                        { icon: <SiRedux />, name: "Redux", color: "group-hover:text-purple-400" },
-                        { icon: <FaHtml5 />, name: "HTML5", color: "group-hover:text-dracula-orange" },
-                        { icon: <FaCss3 />, name: "CSS3 / SASS", color: "group-hover:text-blue-400" },
-                        { icon: <FaFigma />, name: "Figma", color: "group-hover:text-dracula-pink" },
-                    ].map((skill, index) => (
+                    {skillsFrontStack.map((skill, index) => (
                         <div key={index} className="flex flex-col items-center group">
                             <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-cyan/50 transition-all duration-300 mb-2">
                                 <div className={`transition-colors duration-300 ${skill.color}`}>
@@ -281,22 +338,7 @@ const Curriculum = () => {
                     Back-End & Infra
                 </h4>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
-                    {[
-                        { icon: <FaNodeJs />, name: "Node.js", color: "group-hover:text-dracula-green" },
-                        { icon: <SiFastify />, name: "Fastify", color: "group-hover:text-white" },
-                        { icon: <SiExpress />, name: "Express", color: "group-hover:text-yellow-100" },
-                        { icon: <SiPostgresql />, name: "PostgreSQL / SQL", color: "group-hover:text-blue-300" },
-                        { icon: <SiMongodb />, name: "MongoDB / NoSQL", color: "group-hover:text-green-300" },
-                        { icon: <SiPrisma />, name: "Prisma ORM", color: "group-hover:text-purple-400" },
-                        { icon: <SiDrizzle />, name: "Drizzle ORM", color: "group-hover:text-green-400" },
-                        { icon: <SiDocker />, name: "Docker", color: "group-hover:text-blue-400" },
-                        { icon: <SiPython />, name: "Python", color: "group-hover:text-blue-500" },
-                        { icon: <SiPhp />, name: "PHP", color: "group-hover:text-blue-400" },
-                        { icon: <SiPostman />, name: "Postman", color: "group-hover:text-yellow-400" },
-                        { icon: <SiGraphql />, name: "GraphQL", color: "group-hover:text-pink-600" },
-                        { icon: <FaGit />, name: "Git", color: "group-hover:text-dracula-orange" },
-                        { icon: <FaGithub />, name: "GitHub", color: "group-hover:text-dracula-purple" },
-                    ].map((skill, index) => (
+                    {skillsBackStack.map((skill, index) => (
                         <div key={index} className="flex flex-col items-center group">
                             <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-green/50 transition-all duration-300 mb-2">
                                 <div className={`transition-colors duration-300 ${skill.color}`}>
@@ -315,11 +357,7 @@ const Curriculum = () => {
                     Ecossistema / Bibliotecas & Práticas de Desenvolvimento
                 </h4>
                 <div className="flex flex-wrap justify-center gap-3">
-                    {[
-                        "APIs RESTful", "Apollo Client", "Framer Motion","Zod", "React Hook Form", "TanStack Query / React Query ", "Context API", "Zustand", "Vite", "Webpack", "ESLint", "Prettier", "Agentes de IA", "MCPs", "Jest", "Vitest", "React Testing Library (RTL)",
-                        "CI/CD", "GitHub Actions", "Gitflow", "API REST", "JWT", "OAuth2", 
-                        "Clean Code", "Microsserviços", "Sistemas Distribuídos"
-                    ].map((tag) => (
+                    {LibTechniques.map((tag) => (
                         <span key={tag} className="px-4 py-1.5 bg-dracula-bg text-[10px] md:text-[11px] font-bold rounded border border-white/10 text-dracula-cyan/70 hover:text-dracula-cyan hover:border-dracula-cyan/50 transition-all cursor-default">
                             {tag}
                         </span>
@@ -328,9 +366,7 @@ const Curriculum = () => {
             </section>
         </div>
     </div>
-)}
-
-                        
+)}         
 {view === "formacao" && (
     <div className="space-y-6 animate-in fade-in duration-500">
         <h3 className="text-3xl font-bold text-dracula-secondary">Educação & Certificados</h3>

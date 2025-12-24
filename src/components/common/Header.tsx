@@ -12,7 +12,7 @@ const Header = () => {
     
          <NavLink to="/">
                     <motion.img 
-                        src="/assets/logo.png" 
+                        src="/assets/LOGO.png" 
                         alt="Logo Desenvolvedor" 
                         className="w-16 h-16 object-contain cursor-pointer"
                         
@@ -30,8 +30,6 @@ const Header = () => {
                         }}
                     />
                 </NavLink>
-
-        {/* MENU DESKTOP */}
         <ul className="hidden md:flex gap-8 font-medium">
           <li>
             <NavLink to="/" className={({ isActive }) => isActive ? `${baseLink} ${activeLink}` : baseLink}>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import 'swiper/css/bundle';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -39,22 +40,24 @@
   background: #bd93f9;
 }
 
+
 @theme inline {
   --font-jetbrains: 'JetBrains Mono', monospace;
 
-  --color-dracula-bg: #282a36;        /* Fundo (Background) */
-  --color-dracula-current: #44475a;   /* Linha Atual/Seleção */
-  --color-dracula-text: #f8f8f2;      /* Letras (Foreground) */
-  --color-dracula-primary: #bd93f9;   /* Roxo (Destaque Principal) */
-  --color-dracula-secondary: #ff79c6; /* Rosa (Destaque Secundário) */
-  --color-dracula-cyan: #8be9fd;      /* Ciano */
-  --color-dracula-green: #5BAE80;     /* Verde (Sucesso/Commits) */
-  --color-dracula-orange: #ffb86c;    /* Laranja */
+  --color-dracula-bg: #282a36;
+  --color-dracula-current: #44475a;
+  --color-dracula-text: #f8f8f2;
+  --color-dracula-primary: #bd93f9;
+  --color-dracula-secondary: #ff79c6;
+  --color-dracula-cyan: #8be9fd;
+  --color-dracula-green: #5BAE80;
+  --color-dracula-orange: #ffb86c; 
   --color-dracula-red: #ff5555; 
+  --swiper-navigation-color: #bd93f9; 
+  --swiper-pagination-color: #bd93f9;
 
   --animate-terminal-blink: terminal-blink 1s step-end infinite;
  
-  
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -174,4 +177,53 @@
   body {
     @apply bg-dracula-bg text-dracula-text;
   }
+  @layer components {
+  .swiper-pagination-bullet {
+    background: var(--color-dracula-current) !important;
+    opacity: 0.7;
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--color-dracula-primary) !important;
+    opacity: 1;
+    width: 25px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-dracula-primary) !important;
+  scale: 0.8;
+}
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: var(--color-dracula-cyan) !important;
+  }
+
+ @media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+    .swiper {
+      padding: 0 50px !important;
+    }
+  }
+
+.swiper {
+  overflow: clip;
+  padding-bottom: 50px !important;
+}
+
+ .swiper-slide {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
 }
