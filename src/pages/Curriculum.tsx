@@ -380,10 +380,10 @@ const Curriculum = () => {
                 shadowColor="#ff79c6"
             />
             <ResumeItem 
-                date="Outubro 2025"
-                title="Fundamentos do Docker"
+                date="Novembro 2023"
+                title="Certificado de conclusão do curso Formação Full Stack Javascript"
                 subtitle="Full Stack Club"
-                link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1759527053952/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+                link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1705516065370/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
                 badgeColor="bg-dracula-secondary"
                 shadowColor="#ff79c6"
             />
@@ -419,6 +419,14 @@ const Curriculum = () => {
                 badgeColor="bg-dracula-secondary"
                 shadowColor="#ff79c6"
             />
+              <ResumeItem 
+                date="Outubro 2025"
+                title="Fundamentos do Docker"
+                subtitle="Full Stack Club"
+                link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1759527053952/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+                badgeColor="bg-dracula-secondary"
+                shadowColor="#ff79c6"
+            />
             <ResumeItem 
                 date="Março 2025"
                 title="Master Class de Clean Code"
@@ -432,14 +440,6 @@ const Curriculum = () => {
                 title="Técnicas de Refatoração & Testes em aplicações web TypeScript"
                 subtitle="Full Stack Club"
                 link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1742852830114/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
-                badgeColor="bg-dracula-secondary"
-                shadowColor="#ff79c6"
-            />
-            <ResumeItem 
-                date="Novembro 2023"
-                title="Certificado de conclusão do curso Formação Full Stack Javascript"
-                subtitle="Full Stack Club"
-                link="https://www.linkedin.com/in/matheusscarvalho/details/certifications/1705516065370/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
                 badgeColor="bg-dracula-secondary"
                 shadowColor="#ff79c6"
             />
