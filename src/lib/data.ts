@@ -126,7 +126,7 @@ export const projectsData: ProjectData[] = [
         ],
         image: COURSESAPI,
         githubUrl: "https://github.com/matheusscarvalho1/fastify-api",
-        liveUrl: "https://github.com/matheusscarvalho1/fastify-api",
+        liveUrl: "",
     },
     {
         id: 6,
@@ -145,7 +145,7 @@ export const projectsData: ProjectData[] = [
         ],
         image: MONEY, 
         githubUrl: "https://github.com/matheusscarvalho1/transactions-manager",
-        liveUrl: "https://github.com/matheusscarvalho1/transactions-manager",
+        liveUrl: "",
     },
    {
         id: 7,
@@ -226,7 +226,7 @@ export const projectsData: ProjectData[] = [
         ],
         image: APICLIENT,
         githubUrl: "https://github.com/matheusscarvalho1/api-jwt-express", 
-        liveUrl: "https://github.com/matheusscarvalho1/api-jwt-express", 
+        liveUrl: "", 
     },
     
 ];
