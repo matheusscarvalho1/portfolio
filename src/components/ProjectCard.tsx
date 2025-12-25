@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                     loading="lazy"
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 rounded-xl"
                 />
-                {project.liveUrl && project.liveUrl !== "#" && (
+                {project.liveUrl && (
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hidden lg:block">
                         <div className="absolute inset-0 bg-dracula-bg/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <p className="text-dracula-cyan text-xl font-bold p-6 text-center tracking-widest uppercase">
