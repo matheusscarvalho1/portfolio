@@ -3,16 +3,24 @@
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight } from "lucide-react"; 
 import { motion } from "motion/react";
+import { Badge } from "@/components/ui/badge";
 
 interface ProjectProps {
     id: number;
     title: string;
+    status: "completed" | "in-progress" | "maintenance"; 
     description: string;
     image: string;
     tags: string[];
     githubUrl: string;
     liveUrl: string;
 }
+
+const statusLabel: Record<ProjectProps["status"], string> = {
+  "completed": "Completo",
+  "in-progress": "Em progresso",
+  "maintenance": "Manutenção",
+};
 
 const ProjectCard = ({ project }: {project: ProjectProps} ) => {
     return (
@@ -44,15 +52,20 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dracula-cyan mb-4">
                         {project.title}
                     </h2>
+                     <div className="flex items-center gap-2 mb-6">
+                        <Badge variant={project.status} className="text-[10px] uppercase tracking-wider">
+                            {statusLabel[project.status]}
+                        </Badge>
+                    </div>
                     <p className="text-sm sm:text-base text-dracula-text/80 mb-6 leading-relaxed max-w-prose">
                         {project.description}
                     </p>
                     
                     <div className="flex flex-wrap gap-2 mb-8">
                         {project.tags.map(tag => (
-                            <span key={tag} className="px-3 py-1 bg-dracula-bg/50 text-[10px] sm:text-[11px] font-medium rounded-md border border-dracula-orange/20 text-dracula-orange">
+                            <Badge key={tag} variant="draculaProps">
                                 {tag}
-                            </span>
+                            </Badge>
                         ))}
                     </div>
                 </div>
