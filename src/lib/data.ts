@@ -12,6 +12,7 @@ import APICLIENT from "/assets/API-CLIENT.png"
 interface ProjectData {
     id: number;
     title: string;
+    status: "completed" | "in-progress" | "maintenance"; 
     description: string;
     tags: string[];
     image: string;
@@ -22,6 +23,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 1,
         title: "Aparatus Barber — Hall de Barbearias com IA",
+        status: "in-progress",
         description: "Plataforma SaaS-ready para gestão e agendamento de barbearias. O sistema oferece um hall de estabelecimentos, agendamento via calendário tradicional ou assistente de IA generativa, pagamentos online seguros com Stripe e um painel administrativo completo.",
         tags: [
             "Next.js 16",
@@ -44,6 +46,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 2,
         title: "FSW Donalds",
+        status: "completed",
         description: "Plataforma de autoatendimento para fast-food com suporte a múltiplos métodos de consumo (Dine-in/Takeaway). Implementa fluxos complexos de checkout com Stripe, validação de CPF para acompanhamento de pedidos e uma interface otimizada com Server Components.",
         tags: [
             "Next.js 15", 
@@ -64,6 +67,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 3,
         title: "BEWEAR - E-commerce",
+        status: "completed",
         description: "E-commerce full-stack de alta performance com arquitetura Mobile-First. A plataforma conta com catálogo de produtos com variantes, sistema de carrinho sincronizado, autenticação social via Better Auth e checkout seguro integrado ao Stripe com processamento de webhooks.",
         tags: [
             "Next.js 15.4", 
@@ -85,6 +89,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 4,
         title: "Portfolio",
+        status: "in-progress",
         description: "Minha vitrine pessoal desenvolvida com o que há de mais moderno no ecossistema React em 2025. O projeto utiliza o novo React Compiler para otimização automática, consumo de dados via GraphQL com Apollo Client, e animações fluidas com Motion, oferecendo uma experiência de navegação rápida, acessível e visualmente impactante.",
         tags: [
             "React 19",
@@ -104,6 +109,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 5,
         title: "Fastify API — Gestão de Cursos",
+        status: "completed",
         description: "API RESTful de alta performance com arquitetura escalável, utilizando Fastify 5. Implementa autenticação RBAC (Role-Based Access Control) via JWT para distinguir permissões entre estudantes e administradores, além de documentação automatizada com Swagger e cobertura total de testes E2E.",
         tags: [
             "Fastify",
@@ -125,6 +131,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 6,
         title: "Money — Gestão Financeira Mobile",
+        status: "completed",
         description: "Aplicativo nativo para controle de finanças pessoais que marca minha transição do ecossistema Web para o Mobile. O app implementa persistência de dados local com AsyncStorage, navegação baseada em abas com Expo Router e uma experiência de usuário otimizada com feedbacks táteis e gerenciamento avançado de teclados nativos.",
         tags: [
             "React Native",
@@ -143,6 +150,7 @@ export const projectsData: ProjectData[] = [
    {
         id: 7,
         title: "Find Hope Hub",
+        status: "completed",
         description: "Plataforma de utilidade pública para localização de pessoas desaparecidas. A SPA consome dados em tempo real, oferecendo busca avançada, detalhamento de registros e um sistema de colaboração cidadã com upload de arquivos e validação robusta. Focada em performance e impacto social.",
         tags: [
             "React 19",
@@ -163,6 +171,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 8,
         title: "MoniForest — Monitoramento Geográfico",
+        status: "completed",
         description: "Plataforma de inteligência florestal para monitoramento de ativos em tempo real. O sistema utiliza Leaflet para visualização geoespacial, permitindo a gestão de frotas através de indicadores de produtividade, status operacional e histórico cronológico de eventos em mapas interativos.",
         tags: [
             "React 19",
@@ -182,6 +191,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 9,
         title: "AuthSystem (Front-End)— Autenticação JWT",
+        status: "maintenance",
         description: "Sistema robusto de autenticação frontend que consome APIs REST com segurança ponta a ponta. Implementa gerenciamento de tokens JWT (Access & Refresh), interceptors do Axios para renovação automática de sessões, proteção de rotas privadas e validação rigorosa de formulários com Zod e React Hook Form.",
         tags: [
             "React 19",
@@ -200,7 +210,8 @@ export const projectsData: ProjectData[] = [
     },
     {
         id: 10,
-        title: "Auth API (Back-End) — Backend JWT & Express [SOB AJUSTES]",
+        title: "Auth API (Back-End) — Backend JWT & Express",
+        status: "maintenance",
         description: "API RESTful robusta desenvolvida com Node.js e Express para gerenciamento seguro de identidades. Implementa criptografia de senhas com BcryptJS, modelagem de dados via Prisma ORM e proteção de endpoints utilizando middlewares de autenticação JWT, garantindo que apenas usuários autorizados acessem recursos sensíveis.",
         tags: [
             "Node.js",

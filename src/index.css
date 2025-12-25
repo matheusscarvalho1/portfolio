@@ -178,6 +178,8 @@
     @apply bg-dracula-bg text-dracula-text;
   }
   @layer components {
+
+    
   .swiper-pagination-bullet {
     background: var(--color-dracula-current) !important;
     opacity: 0.7;
@@ -194,10 +196,15 @@
   }
 
 .swiper-button-next,
-.swiper-button-prev {
-  color: var(--color-dracula-primary) !important;
-  scale: 0.8;
-}
+  .swiper-button-prev {
+    color: var(--color-dracula-primary) !important;
+    scale: 0.8;
+    /* Força a centralização vertical exata */
+    top: 50% !important;
+    transform: translateY(-50%);
+    margin-top: 0 !important; /* Remove margens padrão que deslocam a seta */
+    z-index: 50;
+  }
 
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
@@ -207,11 +214,11 @@
  @media (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
-    .swiper {
-      padding: 0 50px !important;
-    }
+     .swiper {
+    padding: 0 10px !important; /* Ajustei o padding para não "comer" espaço no celular */
+  }
   }
 
 .swiper {
