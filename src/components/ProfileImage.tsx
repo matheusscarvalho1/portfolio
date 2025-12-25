@@ -16,6 +16,7 @@ export function ProfileImage({ src, alt }: ProfileImageProps) {
       <img
         src={src}
         alt={alt}
+        loading="lazy"
         className="w-full h-full rounded-full object-cover border-4 border-dracula-orange shadow-[0_0_20px_rgba(255,184,108,0.3)] relative z-10"
       />
       <div className="absolute inset-0 rounded-full border-2 border-dracula-orange/30 scale-110 group-hover:scale-125 transition-transform duration-700 ease-in-out z-0 animate-pulse" />

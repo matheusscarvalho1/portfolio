@@ -13,7 +13,8 @@ const Header = () => {
          <NavLink to="/">
                     <motion.img 
                         src="/assets/LOGO.png" 
-                        alt="Logo Desenvolvedor" 
+                        alt="Logo Desenvolvedor"
+                        loading="lazy"
                         className="w-16 h-16 object-contain cursor-pointer"
                         
                         initial={{ opacity: 0, y: 10, scale: 0.8 }}
