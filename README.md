@@ -1,7 +1,7 @@
 # 🚀 Matheus Portfolio | High-Performance SPA
 
 
-// AJUSTAR AS IMAGENS DOS PROJETOS NO CELULAR & PROJETOS SEM DEPLOY REMOVER BOTÃO DE DEPLOY
+// AJUSTAR AS IMAGENS DOS PROJETOS NO CELULAR
 
 Este é um portfólio de nova geração desenvolvido como uma **Single Page Application (SPA)**. O projeto foca em performance, acessibilidade e uma experiência de usuário fluida, utilizando as ferramentas mais modernas do ecossistema front-end em 2025.
 
