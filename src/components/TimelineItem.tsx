@@ -19,25 +19,34 @@ export const ResumeItem = ({
             />
             <div className="flex justify-between items-start gap-4">
                 <div>
-                    <span className="text-dracula-green text-sm font-mono font-bold transition-colors">
+                    {/* DATA: Tratada como Constante/Valor fixo (Roxo) */}
+                    <span className="text-dracula-primary text-sm font-mono font-bold transition-colors">
                         {date}
                     </span>
-                    <h4 className="text-xl font-bold text-dracula-secondary transition-colors">
+                    
+                    {/* TÍTULO: Tratado como Definição de Função (Verde) */}
+                    <h4 className="text-xl font-bold text-dracula-green transition-colors">
                         {title}
                     </h4>
-                    <p className="text-dracula-primary font-semibold text-sm transition-colors">
+                    
+                    {/* SUBTÍTULO: Tratado como Componente/Classe (Ciano) */}
+                    <p className="text-dracula-cyan font-semibold text-sm transition-colors">
                         {subtitle}
                     </p>
+                    
                     {description && (
-                        <p className="text-xs md:text-sm text-muted-foreground mt-1 mb-3">
+                        <p className="text-xs md:text-sm text-muted-foreground mt-1 mb-3 italic">
+                            {/* Comentário (Cinza) */}
                             {description}
                         </p>
                     )}
+                    
                     {tasks && (
                         <ul className="space-y-2 text-sm text-muted-foreground mt-3">
                             {tasks.map((task, index) => (
                                 <li key={index} className="flex items-start gap-2">
-                                    <span className="text-dracula-green">▹</span> {task}
+                                    {/* Ícone/Bullet: Tratado como Prop/Atributo (Laranja) */}
+                                    <span className="text-dracula-orange font-bold">▹</span> {task}
                                 </li>
                             ))}
                         </ul>
@@ -48,7 +57,7 @@ export const ResumeItem = ({
                         asChild 
                         variant="ghost" 
                         size="sm" 
-                        className="text-dracula-cyan hover:text-dracula-secondary p-2 h-auto font-bold transition-all"
+                        className="text-dracula-secondary hover:text-dracula-cyan p-2 h-auto font-bold transition-all"
                     >
                         <a href={link} target="_blank" rel="noopener noreferrer">
                             Verificar ↗
