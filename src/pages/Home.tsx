@@ -29,11 +29,13 @@ const Home = () => {
     if (loading) return (<Loading />);
     if (error) return (<ErrorPage statusCode={500} />);
 
-    const totalPublicRepos = data?.viewer.repositories.totalCount || 0;
-    const totalCommitsGlobal = data?.viewer.repositories.nodes?.reduce(
-        (acc: number, repo: GitHubRepo) => acc + (repo.defaultBranchRef?.target.history.totalCount || 0), 
-        0
-    ) || 0;
+    const repositories = data?.viewer.repositories;
+    const totalPublicRepos = repositories?.totalCount ?? 0;
+
+    const totalCommitsGlobal = repositories?.nodes?.reduce((total, repo) => {
+            const commits = repo.defaultBranchRef?.target.history.totalCount ?? 0;
+            return total + commits;
+        }, 0) ?? 0;
 
     return ( 
         <main className="flex flex-col justify-center items-center p-6 md:p-8 bg-background text-foreground min-h-screen transition-colors duration-500">
