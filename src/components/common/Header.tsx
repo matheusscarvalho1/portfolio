@@ -1,13 +1,15 @@
 import { NavLink } from "react-router";
 import { motion } from "motion/react";
 import MobileNav from "./MobileNav";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
-  const baseLink = "transition-all duration-300 hover:text-dracula-cyan text-sm tracking-widest uppercase";
+
+  const baseLink = "transition-all duration-300 hover:text-dracula-cyan text-sm tracking-widest uppercase transition-colors";
   const activeLink = "text-dracula-secondary md:border-b-2 md:border-dracula-secondary md:pb-1 font-bold";
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-dracula-bg/80 backdrop-blur-md border-b border-dracula-current">
+    <header className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-border transition-colors duration-300">
       <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:px-12">
     
          <NavLink to="/">
@@ -15,7 +17,7 @@ const Header = () => {
                         src="/assets/LOGO.png" 
                         alt="Logo Desenvolvedor"
                         loading="lazy"
-                        className="w-16 h-16 object-contain cursor-pointer"
+                        className="w-16 h-16 object-contain cursor-pointer dark:brightness-110 transition-all"
                         
                         initial={{ opacity: 0, y: 10, scale: 0.8 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -58,7 +60,10 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <MobileNav />
+        <div className="flex items-center gap-2 md:gap-4">
+          <ModeToggle />
+          <MobileNav />
+        </div>
       </nav>
     </header>
   );

@@ -17,11 +17,11 @@ export function ProfileImage({ src, alt }: ProfileImageProps) {
         src={src}
         alt={alt}
         loading="lazy"
-        className="w-full h-full rounded-full object-cover border-4 border-dracula-orange shadow-[0_0_20px_rgba(255,184,108,0.3)] relative z-10"
+        className="w-full h-full rounded-full object-cover border-4 border-profile-main shadow-profile-glow relative z-10 transition-all duration-500"
       />
-      <div className="absolute inset-0 rounded-full border-2 border-dracula-orange/30 scale-110 group-hover:scale-125 transition-transform duration-700 ease-in-out z-0 animate-pulse" />
-    
-      <div className="absolute inset-0 rounded-full bg-dracula-orange/5 blur-xl scale-105 group-hover:scale-115 transition-transform duration-500 z-0" />
+      <div className="absolute inset-0 rounded-full border-2 border-profile-main/30 scale-110 group-hover:scale-125 transition-all duration-700 ease-in-out z-0 animate-pulse" />
+      <div className="absolute inset-0 rounded-full bg-profile-main/10 blur-xl scale-105 group-hover:scale-115 transition-all duration-500 z-0" />
+      
     </motion.div>
   );
 }

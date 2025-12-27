@@ -7,6 +7,7 @@ import { ApolloProvider } from "@apollo/client/react";
 import { client } from '@/apollo/client';
 import Layout from "@/components/common/Layout"; 
 import { Toaster } from "@/components/ui/sonner"
+import { ThemeProvider } from "@/components/theme-provider"
 
 
 
@@ -19,6 +20,7 @@ const ErrorPage = lazy(() => import('@/components/common/Error'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
+    <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
     <Toaster position="bottom-right" richColors />
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
@@ -36,5 +38,6 @@ createRoot(document.getElementById('root')!).render(
         </ApolloProvider>
       </Suspense>
     </BrowserRouter>
+    </ThemeProvider>
   </StrictMode>,
 )
