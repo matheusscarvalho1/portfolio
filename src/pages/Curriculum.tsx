@@ -233,12 +233,12 @@ const Curriculum = () => {
               )}
               {view === "experiencia" && (
                 <div className="flex flex-col h-full space-y-6 animate-in fade-in duration-500">
-                  <h3 className="text-3xl font-bold text-dracula-green">Trajetória Profissional</h3>
+                  <h3 className="text-3xl font-bold text-dracula-cyan">Trajetória Profissional</h3>
                   <div className="flex-1 overflow-y-auto pr-4 custom-scrollbar">
                     <div className="border-l-2 border-dracula-green/30 pl-6 space-y-10">
                       <div className="relative">
                         <div className="absolute w-3 h-3 bg-dracula-green rounded-full -left-[1.95rem] top-1.5 shadow-[0_0_8px_var(--dracula-green)]" />
-                        <span className="text-dracula-cyan text-sm font-mono">Fevereiro 2024 - Julho 2025</span>
+                        <span className="text-dracula-primary text-sm font-mono">Fevereiro 2024 - Julho 2025</span>
                         <h4 className="text-xl font-bold text-foreground">Desenvolvedor Back-End</h4>
                         <p className="text-dracula-secondary font-semibold text-sm">Ginco Urbanismo • Cuiabá/MT - Híbrido</p>
                         <p className="text-xs md:text-sm text-muted-foreground mt-1 mb-4 italic">
@@ -261,7 +261,7 @@ const Curriculum = () => {
                       </div>
                       <div className="relative">
                         <div className="absolute w-3 h-3 bg-dracula-green/50 rounded-full -left-[1.95rem] top-1.5" />
-                        <span className="text-dracula-cyan text-sm font-mono">Março 2024 - Julho 2024</span>
+                        <span className="text-dracula-primary text-sm font-mono">Março 2024 - Julho 2024</span>
                         <h4 className="text-xl font-bold text-foreground">Desenvolvedor Front-End</h4>
                         <p className="text-dracula-secondary font-semibold text-sm">TAVWEB • Cuiabá/MT - Remoto</p>
                         <p className="text-xs md:text-sm text-muted-foreground mt-1 mb-4 italic">
@@ -293,23 +293,23 @@ const Curriculum = () => {
               {view === "habilidades" && (
                 <div className="flex flex-col h-full space-y-6 animate-in fade-in duration-500">
                   <div className="text-center xl:text-left">
-                    <h3 className="text-3xl font-bold text-dracula-orange">Habilidades Técnicas</h3>
+                    <h3 className="text-3xl font-bold text-dracula-cyan">Habilidades Técnicas</h3>
                     <p className="text-white/60 text-sm mt-2">// Stack tecnológico focado em escalabilidade e performance.</p>
                   </div>
                   <div className="flex-1 overflow-y-auto pr-4 custom-scrollbar space-y-10"> 
                     <section>
-                      <h4 className="text-dracula-cyan font-mono text-xs uppercase tracking-widest mb-6 border-l-2 border-dracula-cyan pl-3">
+                      <h4 className="text-dracula-orange font-mono text-xs uppercase tracking-widest mb-6 border-l-2 border-dracula-orange pl-3">
                         Front-End & Mobile
                       </h4>
                       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
                         {skillsFrontStack.map((skill, index) => (
                           <div key={index} className="flex flex-col items-center group">
-                            <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-cyan/50 transition-all duration-300 mb-2">
+                            <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-orange/50 transition-all duration-300 mb-2">
                               <div className={`transition-colors duration-300 ${skill.color}`}>
                                 {skill.icon}
                               </div>
                             </div>
-                            <span className="text-[10px] font-bold uppercase text-center opacity-80 group-hover:opacity-100 group-hover:text-dracula-cyan transition-all">
+                            <span className="text-[10px] font-bold uppercase text-center opacity-80 group-hover:opacity-100 group-hover:text-dracula-orange transition-all">
                               {skill.name}
                             </span>
                           </div>
@@ -317,18 +317,18 @@ const Curriculum = () => {
                       </div>
                     </section>
                     <section>
-                      <h4 className="text-dracula-green font-mono text-xs uppercase tracking-widest mb-6 border-l-2 border-dracula-green pl-3">
+                      <h4 className="text-dracula-orange font-mono text-xs uppercase tracking-widest mb-6 border-l-2 border-dracula-orange pl-3">
                         Back-End & Infra
                       </h4>
                       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6">
                         {skillsBackStack.map((skill, index) => (
                           <div key={index} className="flex flex-col items-center group">
-                            <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-green/50 transition-all duration-300 mb-2">
+                            <div className="text-4xl md:text-5xl p-4 bg-dracula-current/20 rounded-xl border border-white/5 group-hover:border-dracula-orange/50 transition-all duration-300 mb-2">
                               <div className={`transition-colors duration-300 ${skill.color}`}>
                                 {skill.icon}
                               </div>
                             </div>
-                            <span className="text-[10px] font-bold uppercase text-center opacity-80 group-hover:opacity-100 group-hover:text-dracula-green transition-all">
+                            <span className="text-[10px] font-bold uppercase text-center opacity-80 group-hover:opacity-100 group-hover:text-dracula-orange transition-all">
                               {skill.name}
                             </span>
                           </div>
@@ -341,9 +341,9 @@ const Curriculum = () => {
                       </h4>
                       <div className="flex flex-wrap justify-center gap-3">
                         {LibTechniques.map((tag) => (
-                          <span key={tag} className="px-4 py-1.5 bg-dracula-bg text-[10px] md:text-[11px] font-bold rounded border border-white/10 text-dracula-cyan/70 hover:text-dracula-cyan hover:border-dracula-cyan/50 transition-all cursor-default">
+                          <Badge key={tag} variant="draculaProps" className="px-4 py-1.5 bg-dracula-bg text-[10px] md:text-[11px] font-bold transition-all cursor-default">
                             {tag}
-                          </span>
+                          </Badge>
                         ))}
                       </div>
                     </section>
@@ -352,8 +352,8 @@ const Curriculum = () => {
               )}         
               {view === "formacao" && (
                 <div className="space-y-6 animate-in fade-in duration-500">
-                  <h3 className="text-3xl font-bold text-dracula-secondary">Educação & Certificados</h3>
-                  <div className="border-l-2 border-dracula-secondary/30 pl-6 space-y-10">
+                  <h3 className="text-3xl font-bold text-dracula-cyan">Educação & Certificados</h3>
+                  <div className="border-l-2 border-dracula-green/30 pl-6 space-y-10">
                     <ResumeItem 
                       date="Outubro 2017 - Julho 2023"
                       title="Graduação em Engenharia de Computação"

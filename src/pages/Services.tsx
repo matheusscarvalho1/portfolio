@@ -32,19 +32,19 @@ const Services = () => {
                         icon={<CiMobile2 />}
                         title="Desenvolvimento Mobile"
                         description="Construção de aplicativos nativos para iOS e Android usando React Native e Expo, garantindo uma experiência fluida e consistente."
-                        color="text-dracula-orange"
+                        color="text-dracula-primary"
                     />
                     <ServiceCard
                         icon={<SiNextdotjs />}
                         title="Consultoria em Performance"
                         description="Otimização de tempo de carregamento utilizando técnicas avançadas do Next.js como SSR, SSG e ISR, focando em Clean Code."
-                        color="text-dracula-primary"
+                        color="text-dracula-muted"
                     />
                     <ServiceCard
                         icon={<TbApi />}
                         title="Integração de Sistemas"
                         description="Experiência em integrar diferentes sistemas internos e externos, criando soluções de integrações e automações através de scripts."
-                        color="text-dracula-secondary"
+                        color="text-dracula-muted"
                     />
                     <ServiceCard
                         icon={<FaRocket />}

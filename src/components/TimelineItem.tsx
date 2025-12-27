@@ -19,10 +19,10 @@ export const ResumeItem = ({
             />
             <div className="flex justify-between items-start gap-4">
                 <div>
-                    <span className="text-dracula-cyan text-sm font-mono font-bold transition-colors">
+                    <span className="text-dracula-green text-sm font-mono font-bold transition-colors">
                         {date}
                     </span>
-                    <h4 className="text-xl font-bold text-foreground transition-colors">
+                    <h4 className="text-xl font-bold text-dracula-secondary transition-colors">
                         {title}
                     </h4>
                     <p className="text-dracula-primary font-semibold text-sm transition-colors">
