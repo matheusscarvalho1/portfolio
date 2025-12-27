@@ -1,19 +1,17 @@
 import ServiceCard from "@/components/ServiceCard";
-
 import { TbApi } from "react-icons/tb";
 import { FaReact, FaNodeJs, FaRocket } from "react-icons/fa";
-import { CiMobile2 } from "react-icons/ci"
+import { CiMobile2 } from "react-icons/ci";
 import { SiNextdotjs } from "react-icons/si";
-
 
 const Services = () => {
     return ( 
-        <main className="min-h-screen text-dracula-text flex flex-col items-center justify-center p-8 bg-dracula-bg">
+        <main className="min-h-screen bg-background text-foreground flex flex-col items-center justify-center p-8 transition-colors duration-500">
             <div className="max-w-4xl w-full">
                 <h1 className="text-4xl font-bold mb-4 text-center">
                     Meus <span className="text-dracula-secondary">Serviços</span>
                 </h1>
-                <p className="text-center mb-12 opacity-80">
+                <p className="text-center mb-12 text-muted-foreground">
                     Especializado na criação de soluções digitais performáticas e escaláveis, do Front-End ao Back-End.
                 </p>
 
@@ -27,7 +25,7 @@ const Services = () => {
                     <ServiceCard
                         icon={<FaNodeJs />}
                         title="Desenvolvimento Back-End"
-                        description="Arquitetura e desenvolvimento de APIs RESTful e GraphQL robustas com Node.js, Express e Fastify. Integração com PostgreSQL, Prisma e Docker."
+                        description="Arquitetura e desenvolvimento de APIs RESTful e GraphQL robustas com Node.js, Express e Fastify. Integração com PostgreSQL e Docker."
                         color="text-dracula-green"
                     />
                     <ServiceCard
@@ -39,14 +37,14 @@ const Services = () => {
                     <ServiceCard
                         icon={<SiNextdotjs />}
                         title="Consultoria em Performance"
-                        description="Otimização de tempo de carregamento (TTI) utilizando técnicas avançadas do Next.js como SSR, SSG, e ISR, refatoração de código legado e implementação de Clean Code e metodologias Ágeis (Scrum/Kanban)."
-                        color="text-dracula-purple"
+                        description="Otimização de tempo de carregamento utilizando técnicas avançadas do Next.js como SSR, SSG e ISR, focando em Clean Code."
+                        color="text-dracula-primary"
                     />
                     <ServiceCard
                         icon={<TbApi />}
                         title="Integração de Sistemas"
-                        description="Experiência em integrar diferentes sistemas internos e externos, criando soluções de integrações e até automações através de scripts."
-                        color="text-dracula-pink"
+                        description="Experiência em integrar diferentes sistemas internos e externos, criando soluções de integrações e automações através de scripts."
+                        color="text-dracula-secondary"
                     />
                     <ServiceCard
                         icon={<FaRocket />}

@@ -4,6 +4,7 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -16,37 +17,38 @@ interface NavLinkProps {
 const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-
   const handleCloseMenu = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
-  // Tipando a função de estilo
+  // Ajustado para usar as variáveis do tema dinâmico
   const linkStyle = ({ isActive }: NavLinkProps): string => 
     isActive 
       ? "text-2xl text-dracula-secondary font-bold border-l-4 border-dracula-secondary pl-4 transition-all" 
-      : "text-2xl text-dracula-text hover:text-dracula-cyan pl-4 transition-all";
+      : "text-2xl text-foreground hover:text-dracula-cyan pl-4 transition-all";
 
   return (
     <div className="md:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <button 
-            className="text-dracula-cyan p-2 outline-none cursor-pointer"
+            className="text-dracula-cyan p-2 outline-none cursor-pointer hover:opacity-80 transition-opacity"
             aria-label="Abrir menu"
           >
             <HamburgerMenuIcon className="w-8 h-8" />
           </button>
         </SheetTrigger>
-        
         <SheetContent 
           side="right" 
-          className="bg-dracula-bg border-dracula-current text-dracula-text w-[70%] sw-75"
+          className="bg-background border-border text-foreground w-[70%]"
         >
           <SheetHeader>
-            <SheetTitle className="text-dracula-cyan font-jetbrains tracking-widest text-left border-b border-dracula-current pb-4 mt-4">
+            <SheetTitle className="text-dracula-cyan font-jetbrains tracking-widest text-left border-b border-border pb-4 mt-4">
               MENU
             </SheetTitle>
+            <SheetDescription className="sr-only">
+              Menu de navegação lateral para dispositivos móveis.
+            </SheetDescription>
           </SheetHeader>
           
           <ul className="flex flex-col gap-8 mt-10">
