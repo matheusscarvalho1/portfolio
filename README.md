@@ -45,7 +45,7 @@ O projeto consome dados externos e serviços serverless para funcionalidades din
 - **Web3Forms**: Serviço de mensageria que processa o formulário de contato e envia os dados diretamente para o e-mail.
 
 ## Estrutura de Pastas
- Estrutura de Pastas
+ ```
 src/
 ├── apollo/         # Configurações do cliente Apollo e cache global
 ├── components/     # Componentes de UI e Layout (Composition Pattern)
@@ -54,3 +54,4 @@ src/
 ├── hooks/          # Hooks customizados para lógica de UI
 ├── lib/            # Configurações de libs (Tailwind, Motion, Utils)
 └── pages/          # Componentes de página que funcionam como rotas (React Router)
+```
