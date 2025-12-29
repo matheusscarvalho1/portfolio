@@ -18,10 +18,13 @@ const badgeVariants = cva(
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
 
-        completed: "bg-dracula-bg/50 text-dracula-green border border-dracula-green/50 transition-all duration-300 hover:bg-dracula-green hover:text-background hover:border-dracula-green",
-        "in-progress": "bg-dracula-bg/50 text-dracula-orange border border-dracula-orange/50 transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange",
-        maintenance: "bg-dracula-bg/50 text-dracula-red border border-dracula-red/50 transition-all duration-300 hover:bg-dracula-red hover:text-background hover:border-dracula-red",
-        draculaProps: "bg-dracula-bg text-dracula-orange border border-dracula-orange transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange",
+        completed: "bg-dracula-bg/50 text-dracula-green border border-dracula-green/50 transition-all duration-300 hover:bg-dracula-green hover:text-background hover:border-dracula-green cursor-default",
+
+        "in-progress": "bg-dracula-bg/50 text-dracula-orange border border-dracula-orange/50 transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange cursor-default",
+
+        maintenance: "bg-dracula-bg/50 text-dracula-red border border-dracula-red/50 transition-all duration-300 hover:bg-dracula-red hover:text-background hover:border-dracula-red cursor-default",
+
+        draculaProps: "bg-dracula-bg text-dracula-orange border border-dracula-orange transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange cursor-default",
       },
     },
     defaultVariants: {

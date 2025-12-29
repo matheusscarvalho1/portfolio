@@ -33,6 +33,7 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **Single Page Application (SPA)**: Toda a navegação é gerenciada no lado do cliente (client-side) pelo React Router, proporcionando transições instantâneas.
 - **Code Splitting & Lazy Loading**: Uso de React.lazy e Suspense para carregar componentes de rota sob demanda, reduzindo o tamanho inicial do bundle e o tempo de carregamento da primeira página.
 - **Vite Image Optimizer & Sharp**: Pipeline de compressão automática de ativos durante o build para reduzir o tempo de carregamento de imagens.
+- **Experiência Touch-First (Swiper 12)**: Implementação de carrosséis otimizados para dispositivos móveis com suporte a gestos nativos, lazy loading de slides para preservação de banda e paginação dinâmica.
 - **React Compiler**: Eliminação de re-renders desnecessários através da nova engine de compilação do React.
 - **Acessibilidade Nativa**: Navegação completa via teclado, indicadores de foco e uso de atributos ARIA para tecnologias assistivas.
 

@@ -90,45 +90,45 @@ const Curriculum = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     <div className="bg-background p-4 rounded-xl border border-dracula-green">
                       <span className="text-2xl font-bold text-dracula-green">+60%</span>
-                      <p className="text-[10px] uppercase text-muted-foreground">Aumento de Produtividade com Automação</p>
+                      <p className="text-[10px] uppercase text-muted-foreground">Aumento de Produtividade com Automação utilizando Node.js</p>
                     </div>
                     <div className="bg-background p-4 rounded-xl border border-dracula-cyan">
                       <span className="text-2xl font-bold text-dracula-cyan">-25%</span>
-                      <p className="text-[10px] uppercase text-muted-foreground">Redução no Tempo de Carregamento</p>
+                      <p className="text-[10px] uppercase text-muted-foreground">Redução no Tempo de Carregamento de páginas com Next.js/React</p>
                     </div>
                     <div className="bg-background p-4 rounded-xl border border-dracula-primary">
                       <span className="text-2xl font-bold text-dracula-primary">+50%</span>
-                      <p className="text-[10px] uppercase text-muted-foreground">Otimização de Processos (BPM)</p>
+                      <p className="text-[10px] uppercase text-muted-foreground">Otimização de Processos (BPM) e Automação de Fluxos de Trabalho (BPMN)</p>
                     </div>
                   </div>
                   <div className="max-h-125 overflow-y-auto pr-4 custom-scrollbar space-y-6 text-sm md:text-base leading-relaxed text-balance">
-                    <p className="text-foreground">
-                      Especializado em <strong className="text-dracula-cyan">React.js, Next.js e TypeScript</strong>, 
-                      conto com 3 anos de experiência criando interfaces modernas e aplicações web escaláveis. 
-                      Minha atuação no Back-End com <strong className="text-dracula-cyan">Node.js e Fastify</strong> me permite 
-                      entregar soluções completas, desde a arquitetura de APIs até a experiência final do usuário.
-                    </p>
-                    <div className="space-y-4">
-                      <h4 className="text-dracula-secondary font-bold uppercase text-xs tracking-widest">Expertise Técnica</h4>
-                      <p className="text-muted-foreground text-sm">
-                        Domínio em ferramentas como <strong>Docker, PostgreSQL, ORMs como Prisma e Drizzle, Tailwind CSS e shadcn UI</strong>. 
-                        Trabalho orientado a resultados, utilizando <strong>Clean Code, Gitflow e metodologias Ágeis</strong> para garantir entregas contínuas.
+                      <p className="text-foreground">
+                          Especializado em <strong className="text-dracula-cyan">TypeScript, JavaScript, React.js, Next.js</strong>, 
+                          conto com cerca de <strong className="text-dracula-cyan">3 anos de experiência</strong> criando interfaces modernas e aplicações web escaláveis. 
+                          Minha atuação no Back-End com <strong className="text-dracula-cyan">Node.js, Express e Fastify</strong> me permite 
+                          entregar soluções completas, desde a arquitetura de APIs até a experiência final do usuário.
                       </p>
-                    </div>
-                    <div className="bg-background p-6 rounded-2xl border border-border">
-                      <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {softSkills.map((tag) => (
-                          <Badge key={tag} variant="draculaProps">
-                            {tag}
-                          </Badge>
-                        ))}
+                      <div className="space-y-4">
+                          <h4 className="text-dracula-secondary font-bold uppercase text-xs tracking-widest">Expertise Técnica</h4>
+                          <p className="text-muted-foreground text-sm">
+                              Domínio em ferramentas como <strong>Docker</strong>, <strong>PostgreSQL</strong>, <strong>ORMs</strong> como <strong>Prisma</strong> e <strong>Drizzle</strong>, <strong>Tailwind CSS</strong> e <strong>shadcn UI</strong>. 
+                              Trabalho orientado a resultados, utilizando <strong>Clean Code</strong>, <strong>Gitflow</strong> e <strong>Metodologias Ágeis</strong> como <strong>Scrum</strong> para garantir entregas contínuas e alinhadas aos objetivos de negócio.
+                          </p>
                       </div>
-                    </div>
-                    <p className="text-dracula-cyan italic font-medium">
-                      "Estou aberto a oportunidades onde possa aplicar minha expertise em soluções modernas, 
-                      performáticas e orientadas à experiência do usuário."
-                    </p>
+                      <div className="bg-background p-6 rounded-2xl border border-border">
+                          <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
+                          <div className="flex flex-wrap gap-2">
+                              {softSkills.map((tag) => (
+                                  <Badge key={tag} variant="draculaProps">
+                                      {tag}
+                                  </Badge>
+                              ))}
+                          </div>
+                      </div>
+                      <p className="text-dracula-cyan italic font-medium">
+                          "Estou aberto a oportunidades onde possa aplicar minha expertise em soluções modernas, 
+                          performáticas e orientadas à experiência do usuário."
+                      </p>
                   </div>
                 </div>
               )}

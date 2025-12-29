@@ -35,6 +35,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                 <img 
                     src={project.image} 
                     alt={`Preview do ${project.title}`} 
+                    loading="lazy"
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 rounded-xl"
                 />
                 {project.liveUrl && (
