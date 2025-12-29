@@ -58,25 +58,31 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                             {statusLabel[project.status]}
                         </Badge>
                     </div>
-                    <p className="text-sm sm:text-base text-muted-foreground mb-6 leading-relaxed max-w-prose">
+                    <p className="text-sm sm:text-base mb-6 leading-relaxed max-w-prose">
                         {project.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2 mb-8">
-                        {project.tags.map(tag => (
-                            <Badge key={tag} variant="draculaProps">
-                                {tag}
-                            </Badge>
-                        ))}
-                    </div>
+                    <div className="mb-8">
+                        <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground font-bold mb-3 block">
+                            Tecnologias utilizadas:
+                        </span>
+                        <div className="flex flex-wrap gap-2">
+                            {project.tags.map(tag => (
+                                <Badge key={tag} variant="draculaProps">
+                                    {tag}
+                                </Badge>
+                            ))}
+                        </div>
+                </div>
                 </div>
 
-                <div className="flex items-center gap-5 mt-auto">
+                <div className="flex flex-col justify-start gap-5 mt-auto">
                     <a 
                         href={project.githubUrl} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-green border-dracula-green hover:bg-dracula-green hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
+                        className=" w-fit flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-green border-dracula-green hover:bg-dracula-green hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
+                        aria-label={`Ver projeto ${project.title}`}
                     >
                         <FaGithub className="text-xl" /> GitHub
                     </a>
@@ -86,10 +92,10 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                             href={project.liveUrl} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="p-3 sm:p-4 bg-dracula-primary rounded-full text-background shadow-lg transition-all hover:-rotate-45 active:scale-90"
-                            aria-label={`Ver projeto ${project.title}`}
+                            className="w-fit flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-primary border-dracula-primary hover:bg-dracula-primary hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
+                            aria-label={`Ver o deploy ${project.title}`}
                         >
-                             <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                            Deploy do projeto<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                         </a>
                     )}
                 </div>

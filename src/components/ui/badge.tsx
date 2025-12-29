@@ -18,10 +18,10 @@ const badgeVariants = cva(
         outline:
           "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
 
-        completed: "bg-dracula-green/10 text-dracula-green border-dracula-green/20",
-        "in-progress": "bg-dracula-orange/10 text-dracula-orange border-dracula-orange/20",
-        maintenance: "bg-dracula-red/10 text-dracula-red border-dracula-red/20",
-        draculaProps: "bg-dracula-bg/50 text-dracula-orange border border-dracula-orange/50 transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange",
+        completed: "bg-dracula-bg/50 text-dracula-green border border-dracula-green/50 transition-all duration-300 hover:bg-dracula-green hover:text-background hover:border-dracula-green",
+        "in-progress": "bg-dracula-bg/50 text-dracula-orange border border-dracula-orange/50 transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange",
+        maintenance: "bg-dracula-bg/50 text-dracula-red border border-dracula-red/50 transition-all duration-300 hover:bg-dracula-red hover:text-background hover:border-dracula-red",
+        draculaProps: "bg-dracula-bg text-dracula-orange border border-dracula-orange transition-all duration-300 hover:bg-dracula-orange hover:text-background hover:border-dracula-orange",
       },
     },
     defaultVariants: {

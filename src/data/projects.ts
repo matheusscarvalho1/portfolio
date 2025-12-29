@@ -24,7 +24,7 @@ export const projectsData: ProjectData[] = [
         id: 1,
         title: "Aparatus Barber — Hall de Barbearias com IA",
         status: "in-progress",
-        description: "Plataforma SaaS-ready para gestão e agendamento de barbearias. O sistema oferece um hall de estabelecimentos, agendamento via calendário tradicional ou assistente de IA generativa, pagamentos online seguros com Stripe e um painel administrativo completo.",
+        description: "Plataforma SaaS-ready de alta performance desenvolvida com Next.js 16 e React 19. O ecossistema redefine a experiência de agendamento através de uma interface conversacional (Vercel AI SDK) com Function Calling, permitindo reservas via chat. A arquitetura prioriza a conversão com caching estratégico via TanStack Query (latência zero), segurança rigorosa em Server Actions com Next-Safe-Action, autenticação moderna com Better Auth e um fluxo resiliente de pagamentos e reembolsos automatizados com Stripe Webhooks.",
         tags: [
             "Next.js 16",
             "React 19",
@@ -68,7 +68,7 @@ export const projectsData: ProjectData[] = [
         id: 3,
         title: "BEWEAR - E-commerce",
         status: "completed",
-        description: "E-commerce full-stack de alta performance com arquitetura Mobile-First. A plataforma conta com catálogo de produtos com variantes, sistema de carrinho sincronizado, autenticação social via Better Auth e checkout seguro integrado ao Stripe com processamento de webhooks.",
+        description: "E-commerce full-stack de alta performance com arquitetura Mobile-First. A plataforma conta com catálogo de produtos com variantes, sistema de carrinho sincronizado, autenticação com Google via Better Auth e checkout seguro integrado ao Stripe com processamento de webhooks.",
         tags: [
             "Next.js 15.4", 
             "React 19", 

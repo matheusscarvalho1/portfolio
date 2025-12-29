@@ -8,13 +8,13 @@ import profileImg from "/assets/PROFILE.png";
 import { ProfileImage } from "@/components/ProfileImage";
 import ErrorPage from "@/components/common/Error";
 
-export interface GitHubRepo {
+interface GitHubRepo {
   defaultBranchRef: {
     target: { history: { totalCount: number }; };
   } | null;
 }
 
-export interface GitHubResponse {
+interface GitHubResponse {
   viewer: {
     repositories: {
       totalCount: number;

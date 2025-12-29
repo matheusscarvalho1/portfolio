@@ -216,7 +216,6 @@
     scale: 0.8;
     top: 50% !important;
     transform: translateY(-50%);
-    margin-top: 0 !important; 
     z-index: 50;
   }
 

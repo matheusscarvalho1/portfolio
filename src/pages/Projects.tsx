@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import ProjectCard from "../components/ProjectCard";
-import { projectsData } from "../lib/data";
+import { projectsData } from "../data/projects";
 
 const Projects = () => {
    return (
@@ -21,7 +21,7 @@ const Projects = () => {
                         dynamicBullets: true
                     }}
                     autoplay={{ delay: 8000, disableOnInteraction: false }}
-                    className="w-full py-10 pb-20 custom-swiper" 
+                    className="w-full custom-swiper" 
                 >
                     {projectsData.map((project) => (
                         <SwiperSlide key={project.id} className="flex justify-center items-center px-2">
