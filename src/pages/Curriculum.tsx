@@ -42,6 +42,7 @@ const Curriculum = () => {
               <Button
                 key={item.id}
                 onClick={() => setView(item.id)}
+                aria-label={`Visualizar a seção ${item.label}`}
                 className={`h-16 justify-between text-lg border-2 transition-all font-bold 
                   ${view === item.id 
                     ? "border-dracula-green text-dracula-green bg-card hover:bg-card hover:text-dracula-green hover:border-dracula-green/50" 
@@ -63,6 +64,7 @@ const Curriculum = () => {
                 border-dracula-primary text-dracula-primary bg-transparent
                 hover:text-background hover:bg-dracula-primary
               "
+              aria-label="Baixar currículo completo em PDF"
             >
               <a href="/matheus-scarvalho-cv.pdf" download>
                 DOWNLOAD CV COMPLETO <DownloadIcon className="ml-3 w-5 h-5" />

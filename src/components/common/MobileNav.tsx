@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Button } from "../ui/button";
 
 interface NavLinkProps {
   isActive: boolean;
@@ -21,7 +22,6 @@ const MobileNav: React.FC = () => {
     setIsOpen(false);
   };
 
-  // Ajustado para usar as variáveis do tema dinâmico
   const linkStyle = ({ isActive }: NavLinkProps): string => 
     isActive 
       ? "text-2xl text-dracula-secondary font-bold border-l-4 border-dracula-secondary pl-4 transition-all" 
@@ -31,12 +31,12 @@ const MobileNav: React.FC = () => {
     <div className="md:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <button 
+          <Button 
             className="text-dracula-cyan p-2 outline-none cursor-pointer hover:opacity-80 transition-opacity"
             aria-label="Abrir menu"
           >
             <HamburgerMenuIcon className="w-8 h-8" />
-          </button>
+          </Button>
         </SheetTrigger>
         <SheetContent 
           side="right" 

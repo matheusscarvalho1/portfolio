@@ -94,7 +94,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="w-fit flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-primary border-dracula-primary hover:bg-dracula-primary hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
-                            aria-label={`Ver o deploy ${project.title}`}
+                            aria-label={`Acessar o deploy do projeto ${project.title}`}
                         >
                             Deploy do projeto<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                         </a>

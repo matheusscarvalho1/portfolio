@@ -128,6 +128,7 @@ const Contact = () => {
                 <FormField
                   control={form.control}
                   name="name"
+                  aria-label="Seu Nome"
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
@@ -140,6 +141,7 @@ const Contact = () => {
                 <FormField
                   control={form.control}
                   name="email"
+                  aria-label="Seu E-mail"
                   render={({ field }) => (
                     <FormItem>
                       <FormControl>
@@ -154,6 +156,7 @@ const Contact = () => {
               <FormField
                 control={form.control}
                 name="subject"
+                aria-label="Assunto"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
@@ -167,6 +170,7 @@ const Contact = () => {
               <FormField
                 control={form.control}
                 name="message"
+                aria-label="Sua mensagem"
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
@@ -182,7 +186,8 @@ const Contact = () => {
               />
 
               <Button 
-                type="submit" 
+                type="submit"
+                aria-label="Enviar mensagem"
                 disabled={form.formState.isSubmitting}
                 className="w-full h-14 bg-dracula-green text-dracula-bg font-bold rounded-xl hover:opacity-80 transition-all gap-2 uppercase"
               >

@@ -13,7 +13,7 @@ const ServiceCard = ({ icon, title, description, color }: ServiceCardProps) => (
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut" }}
         whileHover={{ scale: 1.05 }}
-        className="bg-card p-6 rounded-xl border border-border transition-all duration-300 hover:border-dracula-orange hover:shadow-xl hover:shadow-dracula-orange/10 flex flex-col h-full cursor-pointer group"
+        className="bg-card p-6 rounded-xl border border-border transition-all duration-300 hover:border-dracula-orange hover:shadow-xl hover:shadow-dracula-orange/10 flex flex-col h-full cursor-default group"
     >
         <div className={`text-4xl mb-4 transition-transform group-hover:scale-110 ${color}`}>
             {icon}

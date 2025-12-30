@@ -16,7 +16,7 @@ const Services = lazy(() => import('@/pages/Services'))
 const Curriculum = lazy(() => import('@/pages/Curriculum'))
 const Projects = lazy(() => import('@/pages/Projects'))
 const Contact = lazy(() => import('@/pages/Contact'))
-const ErrorPage = lazy(() => import('@/components/common/Error'))
+const Error404Page = lazy(() => import ('@/components/common/Error-404'))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -33,7 +33,7 @@ createRoot(document.getElementById('root')!).render(
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
             </Route>
-            <Route path="*" element={<ErrorPage statusCode={404} />} />
+            <Route path="*" element={<Error404Page />} />
           </Routes>
         </ApolloProvider>
       </Suspense>
