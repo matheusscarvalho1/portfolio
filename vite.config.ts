@@ -34,6 +34,7 @@ export default defineConfig({
       avif: {  quality: 70 },
     }),
   ],
+  base: '/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
