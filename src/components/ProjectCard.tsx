@@ -29,14 +29,14 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            className="flex flex-col md:flex-row w-full bg-card shadow-2xl rounded-3xl overflow-hidden border border-border transition-all duration-300 hover:border-dracula-primary/40 p-6 md:p-12 lg:p-16 gap-10 lg:gap-16 min-h-125 md:min-h-150 lg:min-h-187.5"
+             className="flex flex-col md:flex-row w-full bg-card shadow-2xl rounded-3xl overflow-hidden border border-border transition-all duration-300 hover:border-dracula-primary/40 p-5 sm:p-8 md:p-12 lg:p-16 gap-8 md:gap-16 min-h-fit md:min-h-150"
         > 
-            <div className="group order-1 md:order-2 w-full md:w-1/2 relative overflow-hidden rounded-xl aspect-video md:aspect-auto md:min-h-87.5">
+            <div className="group order-1 md:order-2 w-full md:w-1/2 h-55 sm:h-75 md:h-auto relative overflow-hidden rounded-2xl shadow-inner bg-dracula-current/5">
                 <img 
                     src={project.image} 
                     alt={`Preview do ${project.title}`} 
                     loading="lazy"
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105 rounded-xl"
+                    className="w-full h-full object-cover md:object-contain transition-transform duration-700 group-hover:scale-105"
                 />
                 {project.liveUrl && (
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hidden lg:block">
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                 )}
             </div>
 
-            <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col justify-center">
+            <div className="order-2 md:order-1 w-full md:w-1/2 flex flex-col">
                 <div className="flex-1">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-dracula-cyan mb-4">
                         {project.title}
@@ -77,7 +77,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                 </div>
                 </div>
 
-                <div className="flex flex-col justify-start gap-5 mt-auto">
+                <div className="flex flex-wrap gap-4 mt-auto">
                     <a 
                         href={project.githubUrl} 
                         target="_blank" 
