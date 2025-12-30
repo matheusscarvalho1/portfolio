@@ -95,7 +95,7 @@ export const projectsData: ProjectData[] = [
     {
         id: 4,
         title: "Portfolio",
-        status: "in-progress",
+        status: "completed",
         description: "Vitrine tecnológica desenvolvida como uma SPA de ultra performance, explorando o potencial máximo do ecossistema React em 2025. O projeto utiliza o React Compiler e Vite 7 para garantir uma navegação instantânea e livre de re-renders desnecessários. A experiência é sustentada por uma arquitetura de dados moderna com GraphQL e Apollo Client, além de uma interface imersiva orquestrada com Motion e Swiper 12. Cada detalhe foi otimizado via Code Splitting, priorizando acessibilidade e uma fluidez mobile-first rigorosa.",
         tags: [
             "React 19",
