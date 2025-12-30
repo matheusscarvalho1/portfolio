@@ -9,8 +9,6 @@ import Layout from "@/components/common/Layout";
 import { Toaster } from "@/components/ui/sonner"
 import { ThemeProvider } from "@/components/theme-provider"
 
-
-
 const Home = lazy(() => import('@/pages/Home'))
 const Services = lazy(() => import('@/pages/Services'))
 const Curriculum = lazy(() => import('@/pages/Curriculum'))
