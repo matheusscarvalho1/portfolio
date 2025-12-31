@@ -41,8 +41,8 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" aria-label={t("navbar.aria_curriculum")} className={({ isActive }) => isActive ? `${baseLink} ${activeLink}` : baseLink}>
-              {t("navbar.curriculum")}
+            <NavLink to="/resume" aria-label={t("navbar.aria_resume")} className={({ isActive }) => isActive ? `${baseLink} ${activeLink}` : baseLink}>
+              {t("navbar.resume")}
             </NavLink>
           </li>
           <li>

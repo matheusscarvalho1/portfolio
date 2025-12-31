@@ -76,12 +76,12 @@ const MobileNav: React.FC = () => {
             </li>
             <li>
               <NavLink 
-                to="/curriculum" 
+                to="/resume" 
                 onClick={handleCloseMenu} 
                 className={linkStyle}
-                aria-label={t("navbar.aria_curriculum")}
+                aria-label={t("navbar.aria_resume")}
               >
-                {t("navbar.curriculum")}
+                {t("navbar.resume")}
               </NavLink>
             </li>
             <li>

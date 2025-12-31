@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "services": "Serviços",
-    "curriculum": "Currículo",
+    "resume": "Currículo",
     "projects": "Projetos",
     "contact": "Contato",
     "menu": "MENU",
@@ -10,7 +10,7 @@
     "aria_menu_open": "Abrir menu",
     "aria_home": "Ir para a página inicial",
     "aria_services": "Ir para a página de serviços",
-    "aria_curriculum": "Ir para a página de currículo",
+    "aria_resume": "Ir para a página de currículo",
     "aria_projects": "Ir para a página de projetos",
     "aria_contact": "Ir para a página de contato"
   },
