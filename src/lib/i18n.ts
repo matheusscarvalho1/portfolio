@@ -9,6 +9,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng: "pt-BR",
     supportedLngs: ["pt-BR", "en-US"],
     fallbackLng: "pt-BR",
 
