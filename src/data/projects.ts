@@ -24,7 +24,7 @@ export const projectsData: ProjectData[] = [
         id: 1,
         title: "Aparatus Barber — Hall de Barbearias com IA",
         status: "in-progress",
-        description: "Plataforma SaaS-ready de vanguarda construída com Next.js 16, React 19 e Tailwind CSS 4. O projeto utiliza uma pipeline de AI Orchestration (MCPs como Context7 e Figma MCP e além disso Cursor Rules) para garantir Clean Code e alta fidelidade ao design. Oferece agendamentos inteligentes via chat com Vercel AI SDK (Function Calling), pagamentos e reembolsos automatizados via Stripe Webhooks e autenticação robusta com Better Auth, tudo otimizado com caching estratégico via TanStack Query para latência zero.",
+        description: "Plataforma SaaS-ready construída com Next.js 16, React 19 e Tailwind CSS 4. O projeto utiliza uma pipeline de AI Orchestration (MCPs como Context7 e Figma MCP e além disso Cursor Rules) para garantir Clean Code e alta fidelidade ao design. Oferece agendamentos inteligentes via chat com Vercel AI SDK (Function Calling), pagamentos e reembolsos automatizados via Stripe Webhooks e autenticação robusta com Better Auth, tudo otimizado com caching estratégico via TanStack Query para latência zero.",
         tags: [
             "Next.js 16",
             "React 19",

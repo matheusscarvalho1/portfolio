@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { useTranslation } from "react-i18next";
 import {
   Sheet,
   SheetContent,
@@ -16,6 +17,7 @@ interface NavLinkProps {
 }
 
 const MobileNav: React.FC = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handleCloseMenu = () => {
@@ -33,7 +35,7 @@ const MobileNav: React.FC = () => {
         <SheetTrigger asChild>
           <Button 
             className="text-dracula-cyan p-2 outline-none cursor-pointer hover:opacity-80 transition-opacity"
-            aria-label="Abrir menu"
+            aria-label={t("navbar.aria_menu_open")}
           >
             <HamburgerMenuIcon className="w-8 h-8" />
           </Button>
@@ -44,37 +46,62 @@ const MobileNav: React.FC = () => {
         >
           <SheetHeader>
             <SheetTitle className="text-dracula-cyan font-jetbrains tracking-widest text-left border-b border-border pb-4 mt-4">
-              MENU
+              {t("navbar.menu")}
             </SheetTitle>
             <SheetDescription className="sr-only">
-              Menu de navegação lateral para dispositivos móveis.
+              {t("navbar.menu_description")}
             </SheetDescription>
           </SheetHeader>
           
           <ul className="flex flex-col gap-8 mt-10">
             <li>
-              <NavLink to="/" onClick={handleCloseMenu} className={linkStyle}>
-                Home
+              <NavLink 
+                to="/" 
+                onClick={handleCloseMenu} 
+                className={linkStyle}
+                aria-label={t("navbar.aria_home")}
+              >
+                {t("navbar.home")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/services" onClick={handleCloseMenu} className={linkStyle}>
-                Serviços
+              <NavLink 
+                to="/services" 
+                onClick={handleCloseMenu} 
+                className={linkStyle}
+                aria-label={t("navbar.aria_services")}
+              >
+                {t("navbar.services")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/curriculum" onClick={handleCloseMenu} className={linkStyle}>
-                Currículo
+              <NavLink 
+                to="/curriculum" 
+                onClick={handleCloseMenu} 
+                className={linkStyle}
+                aria-label={t("navbar.aria_curriculum")}
+              >
+                {t("navbar.curriculum")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/projects" onClick={handleCloseMenu} className={linkStyle}>
-                Projetos
+              <NavLink 
+                to="/projects" 
+                onClick={handleCloseMenu} 
+                className={linkStyle}
+                aria-label={t("navbar.aria_projects")}
+              >
+                {t("navbar.projects")}
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={handleCloseMenu} className={linkStyle}>
-                Contato
+              <NavLink 
+                to="/contact" 
+                onClick={handleCloseMenu} 
+                className={linkStyle}
+                aria-label={t("navbar.aria_contact")}
+              >
+                {t("navbar.contact")}
               </NavLink>
             </li>
           </ul>

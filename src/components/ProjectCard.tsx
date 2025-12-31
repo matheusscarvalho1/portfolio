@@ -1,9 +1,8 @@
-"use client";
-
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight } from "lucide-react"; 
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 
 interface ProjectProps {
     id: number;
@@ -16,13 +15,9 @@ interface ProjectProps {
     liveUrl: string;
 }
 
-const statusLabel: Record<ProjectProps["status"], string> = {
-  "completed": "Completo",
-  "in-progress": "Em progresso",
-  "maintenance": "Manutenção",
-};
-
 const ProjectCard = ({ project }: {project: ProjectProps} ) => {
+    const { t } = useTranslation();
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -34,7 +29,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
             <div className="group order-1 md:order-2 w-full md:w-1/2 h-55 sm:h-75 md:h-auto relative overflow-hidden rounded-2xl shadow-inner bg-dracula-current/5">
                 <img 
                     src={project.image} 
-                    alt={`Preview do ${project.title}`} 
+                    alt={t("projects.preview", { title: project.title })}
                     loading="lazy"
                     className="w-full h-full object-cover md:object-contain transition-transform duration-700 group-hover:scale-105"
                 />
@@ -42,7 +37,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="hidden lg:block">
                         <div className="absolute inset-0 bg-background/90 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                             <p className="text-dracula-cyan text-xl font-bold p-6 text-center tracking-widest uppercase">
-                                Acesse o projeto
+                                {t("projects.accessProject")}
                             </p>
                         </div>
                     </a>
@@ -56,7 +51,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                     </h2>
                      <div className="flex items-center gap-2 mb-6">
                         <Badge variant={project.status} className="text-[10px] uppercase tracking-wider">
-                            {statusLabel[project.status]}
+                            {t(`projects.status.${project.status}`)}
                         </Badge>
                     </div>
                     <p className="text-sm sm:text-base mb-6 leading-relaxed max-w-prose">
@@ -65,7 +60,7 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                     
                     <div className="mb-8">
                         <span className="text-xs uppercase tracking-[0.15em] text-muted-foreground font-bold mb-3 block">
-                            Tecnologias utilizadas:
+                            {t("projects.usedTech")}
                         </span>
                         <div className="flex flex-wrap gap-2">
                             {project.tags.map(tag => (
@@ -83,20 +78,20 @@ const ProjectCard = ({ project }: {project: ProjectProps} ) => {
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className=" w-fit flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-green border-dracula-green hover:bg-dracula-green hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
-                        aria-label={`Ver projeto ${project.title}`}
+                        aria-label={t("projects.viewGithub", { title: project.title })}
                     >
-                        <FaGithub className="text-xl" /> GitHub
+                        <FaGithub className="text-xl" /> {t("projects.github")}
                     </a>
                     
-                    {project.liveUrl && project.liveUrl !== "#" && (
+                    {project.liveUrl && project.liveUrl !== "#" && project.liveUrl !== "" && (
                         <a 
                             href={project.liveUrl} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="w-fit flex items-center gap-3 px-6 py-3 bg-dracula-card font-bold rounded-lg transition-all border text-dracula-primary border-dracula-primary hover:bg-dracula-primary hover:text-card active:scale-95 shadow-md text-sm sm:text-base"
-                            aria-label={`Acessar o deploy do projeto ${project.title}`}
+                            aria-label={t("projects.accessLive", { title: project.title })}
                         >
-                            Deploy do projeto<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                            {t("projects.liveDeploy")}<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
                         </a>
                     )}
                 </div>

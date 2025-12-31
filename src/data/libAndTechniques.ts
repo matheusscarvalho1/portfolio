@@ -11,7 +11,7 @@ export const LibAndTechniques: string[] = [
     "Webpack", 
     "ESLint", 
     "Prettier", 
-    "Agentes de IA", 
+    "AI Agents", 
     "MCPs", 
     "Jest", 
     "Vitest", 

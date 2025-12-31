@@ -1,11 +1,14 @@
 // src/components/common/Error500.tsx
 import { RotateCcw, AlertCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../ui/button";
 
 const Error500 = () => {
+  const { t } = useTranslation();
+
   return (
     <main
-      aria-labelledby="error-title"
+      aria-labelledby="error500-title"
       className="flex min-h-[80vh] w-full flex-col items-center justify-center p-4 text-center"
       role="alert"
       aria-live="assertive"
@@ -21,12 +24,12 @@ const Error500 = () => {
         <AlertCircle className="w-16 h-16 text-destructive" aria-hidden="true" />
       </div>
 
-      <h1 id="error-title" className="mb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Erro inesperado
+      <h1 id="error500-title" className="mb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        {t("error500.title")}
       </h1>
 
       <p className="mb-8 max-w-md text-lg text-muted-foreground">
-        Ocorreu um erro ao carregar os dados. Por favor, tente novamente mais tarde.
+        {t("error500.description")}
       </p>
 
       <Button
@@ -40,10 +43,11 @@ const Error500 = () => {
           shadow-lg shadow-dracula-red/30
           transition-all duration-300
         "
+        aria-label={t("error.retry_aria")}
       >
         <RotateCcw className="w-5 h-5 transition-transform group-hover:-rotate-180" aria-hidden="true"/>
         <span className="font-semibold tracking-wide">
-          Tentar novamente
+          {t("error500.retry_button")}
         </span>
       </Button>
     </main>

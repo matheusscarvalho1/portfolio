@@ -1,0 +1,511 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "curriculum": "Resume",
+    "projects": "Projects",
+    "contact": "Contact",
+    "menu": "MENU",
+    "menu_description": "Side navigation menu for mobile devices.",
+    "aria_menu_open": "Open menu",
+    "aria_home": "Go to home page",
+    "aria_services": "Go to services page",
+    "aria_curriculum": "Go to resume page",
+    "aria_projects": "Go to projects page",
+    "aria_contact": "Go to contact page"
+  },
+  "home": {
+    "role": "Software Developer",
+    "greeting": "Hello, I am",
+    "description": "// Transforming complex requirements into high-impact digital solutions, with expertise in <1>Front-end</1>, <1>Mobile</1>, <1>Back-end</1> and <1>FullStack</1> development.",
+    "download_cv": "DOWNLOAD RESUME",
+    "stats": {
+      "experience": "Years of <1/> experience",
+      "projects": "Robust <1/> projects",
+      "repositories": "Repositories",
+      "commits": "Total <1/> Commits"
+    },
+    "aria": {
+      "download": "Download CV in PDF",
+      "linkedin": "Access LinkedIn profile (opens in new tab)",
+      "github": "Access GitHub profile (opens in new tab)",
+      "exp_label": "3 years of experience",
+      "proj_label": "More than 6 robust projects"
+    }
+  },
+  "services": {
+    "title_main": "My",
+    "title_highlight": "Services",
+    "description": "Specialized in creating high-performance and scalable digital solutions, from Front-End to Back-End.",
+    "cards": {
+      "frontend": {
+        "title": "Front-End Development",
+        "desc": "Creating modern and responsive interfaces using React.js, Next.js, and Tailwind CSS. Focused on UX/UI and performance."
+      },
+      "backend": {
+        "title": "Back-End Development",
+        "desc": "Architecture and development of robust RESTful and GraphQL APIs with Node.js, Express, and Fastify. PostgreSQL and Docker integration."
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "desc": "Building native apps for iOS and Android using React Native and Expo, ensuring a fluid and consistent experience."
+      },
+      "performance": {
+        "title": "Performance Consulting",
+        "desc": "Load time optimization using advanced Next.js techniques like SSR, SSG, and ISR, focusing on Clean Code."
+      },
+      "integration": {
+        "title": "Systems Integration",
+        "desc": "Experience in integrating different internal and external systems, creating integration and automation solutions via scripts."
+      },
+      "fullstack": {
+        "title": "Full Stack Solutions",
+        "desc": "Delivery of complete solutions, managing the development lifecycle, from database to final deployment."
+      }
+    }
+  },
+  "resume": {
+    "title_main": "My",
+    "title_highlight": "Resume",
+    "nav": {
+      "about": "About Me",
+      "experience": "Experience",
+      "skills": "Skills",
+      "education": "Education"
+    },
+    "download": {
+      "label": "DOWNLOAD FULL RESUME",
+      "aria": "Download full resume PDF"
+    },
+    "about": {
+      "title": "My Story",
+      "role": "// Front-End & Full Stack Developer",
+      "stats": {
+        "productivity": {
+          "value": "+60%",
+          "label": "Productivity increase through Node.js automation"
+        },
+        "performance": {
+          "value": "-25%",
+          "label": "Page load time reduction with Next.js/React"
+        },
+        "process": {
+          "value": "+50%",
+          "label": "Process optimization (BPM) and workflow automation (BPMN)"
+        }
+      },
+      "description": {
+        "p1": "Specialized in <1>TypeScript</1>, <1>JavaScript</1>, <1>React.js</1>, <1>Next.js</1>, with approximately <1>3 years of experience</1> building modern interfaces and scalable web applications. My expertise in Back-End development with <1>Node.js</1>, <1>Express</1>, and <1>Fastify</1> enables me to deliver complete solutions, from API architecture to the final user experience."
+      },
+      "expertise": {
+        "title": "Technical Expertise",
+        "text": "Proficiency in tools such as <1>Docker</1>, <1>PostgreSQL</1>, <1>ORMs</1> like <1>Prisma</1> and <1>Drizzle</1>, <1>Tailwind CSS</1>, and <1>shadcn UI</1>. Results-driven work approach, utilizing <1>Clean Code</1>, <1>Gitflow</1>, and <1>Agile</1> Methodologies like <1>Scrum</1> to ensure continuous deliveries aligned with business objectives."
+      },
+      "soft_skills": {
+        "title": "Soft Skills",
+        "items": [
+          "UX-focused",
+          "Team collaboration",
+          "Attention to detail",
+          "Clear communication",
+          "Problem solving",
+          "Fast learner",
+          "Commitment to quality",
+          "Creative thinking"
+        ]
+      },
+      "quote": "\"I am open to opportunities where I can apply my expertise in modern, high-performance, user-centered solutions.\""
+    },
+    "experience": {
+      "title": "Professional Journey",
+      "items": {
+        "backend": {
+          "period": "February 2024 - July 2025",
+          "role": "Back-End Developer",
+          "company": "Ginco Urbanismo • Cuiabá/MT - Hybrid",
+          "stack": "Node.js | TypeScript | Fastify | Express | Next.js | Prisma ORM | Jest | Swagger",
+          "activities": [
+            "Maintenance and evolution of internal company APIs and support for a real estate after-sales app with financial management and construction tracking.",
+            "Back-end support for more than 40 RESTful endpoints using Fastify.",
+            "Development of critical APIs with TypeScript and Prisma ORM, ensuring security and scalability."
+          ]
+        },
+        "frontend": {
+          "period": "March 2024 - July 2024",
+          "role": "Front-End Developer",
+          "company": "TAVWEB • Cuiabá/MT - Remote",
+          "stack": "React.js | Next.js | TypeScript | Tailwind CSS | Material-UI | RESTful APIs",
+          "activities": [
+            "Development of a B2G document management platform, structured for future AI implementation.",
+            "Worked on interface evolution, creating and refining complex components using React.js, Next.js and TypeScript.",
+            "Strategic use of Material-UI and Tailwind CSS to ensure responsiveness and strong visual consistency.",
+            "Focus on improving interactivity and user flows between internal teams and end clients."
+          ]
+        }
+      }
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "subtitle": "// Tech stack focused on scalability and performance.",
+      "frontend": "Front-End & Mobile",
+      "backend": "Back-End & Infrastructure",
+      "ecosystem": "Ecosystem / Libraries & Development Practices"
+    },
+    "education": {
+      "title": "Education & Certifications",
+      "check": "Check",
+      "items": [
+        {
+          "date": "October 2017 - July 2023",
+          "title": "Bachelor's Degree in Computer Engineering",
+          "subtitle": "UFMT — Federal University of Mato Grosso",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1706397535563/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "November 2023",
+          "title": "Full Stack JavaScript Course Completion Certificate",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1705516065370/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "September 2025",
+          "title": "React Fundamentals",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1759788991967/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "August 2025",
+          "title": "E-Commerce Bootcamp",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1759952767906/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "May 2025",
+          "title": "Micro-Frontends and Monorepos Course",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1746483080188/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "March 2025",
+          "title": "Hexagonal Architecture / Ports and Adapters Architecture",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1742854543841/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "October 2025",
+          "title": "Docker Fundamentals",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1759527053952/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "March 2025",
+          "title": "Clean Code Master Class",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1742854248750/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        },
+        {
+          "date": "March 2025",
+          "title": "Refactoring & Testing Techniques in TypeScript Web Applications",
+          "subtitle": "Full Stack Club",
+          "link": "https://www.linkedin.com/in/matheusscarvalho/details/certifications/1742852830114/single-media-viewer/?profileId=ACoAADT5XRwBAb0vINvt4Bc1F_7xF2401RkHCkM"
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title_main": "My",
+    "title_highlight": "Projects",
+    "carousel": {
+      "aria_label": "Project list carousel",
+      "role_description": "carousel",
+      "prev": "Previous project",
+      "next": "Next project",
+      "first": "First project",
+      "last": "Last project",
+      "pagination": "Go to project {{index}}"
+    },
+    "list": [
+      {
+        "id": 1,
+        "title": "Aparatus Barber — Barber Hall with AI",
+        "status": "in-progress",
+        "description": "SaaS-ready platform built with Next.js 16, React 19, and Tailwind CSS 4. The project uses an AI Orchestration pipeline (MCPs such as Context7 and Figma MCP, plus Cursor Rules) to ensure clean code and high design fidelity. Offers smart scheduling via chat with Vercel AI SDK (Function Calling), automated payments and refunds via Stripe Webhooks, and robust authentication with Better Auth, all optimized with strategic caching via TanStack Query for zero latency.",
+        "tags": [
+          "Next.js 16",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4",
+          "Vercel AI SDK",
+          "MCPs",
+          "Better Auth",
+          "Prisma ORM",
+          "PostgreSQL (Neon)",
+          "Stripe",
+          "Zod",
+          "React Hook Form",
+          "TanStack Query",
+          "Server Actions",
+          "shadcn/ui"
+        ],
+        "image": "/assets/APARATUS-03-4x.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/aparatus-barber/",
+        "liveUrl": "https://aparatus-barber-eta.vercel.app/"
+      },
+      {
+        "id": 2,
+        "title": "BEWEAR - E-commerce",
+        "status": "completed",
+        "description": "High-performance full-stack e-commerce developed with Next.js 15.4, React 19, and Tailwind CSS 4. With a Mobile-First architecture, the platform offers a product catalog with variants, synchronized cart system via TanStack Query, modern authentication via Better Auth, and secure checkout integrated with Stripe with resilient webhook processing. Drizzle ORM ensures ultra-fast queries and minimal latency throughout the purchase journey.",
+        "tags": [
+          "Next.js 15.4",
+          "React 19",
+          "TypeScript",
+          "Tailwind CSS 4",
+          "Drizzle ORM",
+          "Better Auth",
+          "Zod",
+          "React Hook Form",
+          "Stripe",
+          "PostgreSQL (Neon)",
+          "TanStack Query",
+          "Server Actions",
+          "shadcn/ui"
+        ],
+        "image": "/assets/BEWEAR-02.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/bewear-ecommerce",
+        "liveUrl": "https://bewear-ecommerce-khaki.vercel.app/"
+      },
+      {
+        "id": 3,
+        "title": "FSW Donalds",
+        "status": "completed",
+        "description": "Modern self-service and delivery platform developed with Next.js 15.1 and React 19. Provides a complete online ordering experience, supporting multiple consumption methods (Dine-in/Takeaway) with a cart system, real-time status tracking, and CPF validation. Uses Server Actions for type-safe operations, Prisma ORM in Docker containerized environment, and secure checkout flow integrated with Stripe payment gateway.",
+        "tags": [
+          "Next.js 15",
+          "React 19",
+          "Prisma ORM",
+          "PostgreSQL",
+          "Stripe",
+          "Docker",
+          "Tailwind CSS",
+          "Server Actions",
+          "Zod",
+          "Context API",
+          "shadcn/ui"
+        ],
+        "image": "/assets/FSW-DONALDS-03.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/fsw-donalds",
+        "liveUrl": "https://fsw-donalds-red.vercel.app/fsw-donalds"
+      },
+      {
+        "id": 4,
+        "title": "Portfolio",
+        "status": "completed",
+        "description": "Tech showcase developed as a high-performance SPA, exploring the full potential of the React ecosystem in 2025. Uses React Compiler and Vite 7 to ensure instant navigation and avoid unnecessary re-renders. Supported by modern data architecture with GraphQL and Apollo Client, plus an immersive interface orchestrated with Motion and Swiper 12. Every detail optimized with code splitting, prioritizing accessibility and strict mobile-first fluidity.",
+        "tags": [
+          "React 19",
+          "TypeScript",
+          "React Router 7",
+          "Vite 7",
+          "Tailwind CSS 4.1",
+          "GraphQL / Apollo",
+          "Motion (Framer)",
+          "React Compiler",
+          "shadcn/ui",
+          "Zod",
+          "React Hook Form",
+          "Context API"
+        ],
+        "image": "/assets/PORTFOLIO-01.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/portfolio",
+        "liveUrl": "https://matheusscarvalho-dev.onrender.com/"
+      },
+      {
+        "id": 5,
+        "title": "Fastify API — Courses Management & RBAC",
+        "status": "completed",
+        "description": "High-performance RESTful API developed with Fastify 5.5 and TypeScript, using Drizzle ORM for ultra-fast data layer with PostgreSQL. Implements strict RBAC (Role-Based Access Control) distinguishing 'student' and 'manager', secured with JWT authentication and Argon2 encryption. Reliability ensured through integration testing pipeline with Vitest and isolated Docker environments, plus automated documentation via Swagger/Scalar UI.",
+        "tags": [
+          "Fastify 5.5",
+          "Node.js",
+          "TypeScript",
+          "Drizzle ORM",
+          "PostgreSQL",
+          "Vitest",
+          "Supertest",
+          "JWT Auth",
+          "RBAC",
+          "Zod",
+          "Docker",
+          "Swagger"
+        ],
+        "image": "/assets/FASTIFY-APIs.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/fastify-api",
+        "liveUrl": ""
+      },
+      {
+        "id": 6,
+        "title": "Money — Mobile Financial Management",
+        "status": "completed",
+        "description": "Native app for personal finance management, mastering the React Native ecosystem (Expo SDK 53). Uses Expo Router v4 for file-based navigation and offline local data persistence with AsyncStorage. Focused on refined UX through haptic feedback, smooth animations with Reanimated 3, advanced keyboard handling, and native date pickers, ensuring a responsive and intuitive interface for the end user.",
+        "tags": [
+          "React Native",
+          "Expo SDK 53",
+          "TypeScript",
+          "Expo Router v4",
+          "Context API",
+          "AsyncStorage",
+          "Reanimated 3",
+          "Mobile First"
+        ],
+        "image": "/assets/MONEY-04-4x.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/transactions-manager",
+        "liveUrl": ""
+      },
+      {
+        "id": 7,
+        "title": "Find Hope Hub — Missing Persons Location",
+        "status": "completed",
+        "description": "Public utility platform designed to centralize information and assist in locating missing persons. Developed with React 19 and Vite 7, the SPA focuses on resilience and data integrity, implementing advanced real-time search and Zod-validated forms. Stands out with secure upload management and native date pickers to avoid inconsistencies, ensuring accessible and performant interface in urgent situations.",
+        "tags": [
+          "React 19",
+          "TypeScript",
+          "Vite 7",
+          "Tailwind CSS 4.1",
+          "React Router 7",
+          "React Hook Form",
+          "Zod",
+          "Vitest",
+          "Docker",
+          "shadcn/ui"
+        ],
+        "image": "/assets/HOPE-03.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/find-hope-hub",
+        "liveUrl": "https://find-hope-hub.onrender.com/"
+      },
+      {
+        "id": 8,
+        "title": "MoniForest — Geographic Monitoring",
+        "status": "completed",
+        "description": "Geographic intelligence platform (GIS) developed with React 19 and Tailwind CSS 4.1 for real-time asset monitoring. Uses Leaflet for geospatial processing, enabling fleet management with productivity indicators, operational status, and event timeline. Architecture transforms lat/long coordinates into critical visual insights, leveraging Vite 6 for high performance in interactive map layer rendering.",
+        "tags": [
+          "React 19",
+          "TypeScript",
+          "Leaflet",
+          "React-Leaflet",
+          "Vite 6",
+          "Tailwind CSS 4",
+          "GIS",
+          "Axios",
+          "shadcn/ui"
+        ],
+        "image": "/assets/MONIFOREST-03-4x.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/MoniForest",
+        "liveUrl": "https://moniforest.onrender.com/"
+      },
+      {
+        "id": 9,
+        "title": "AuthSystem (Front-End) — JWT Authentication",
+        "status": "maintenance",
+        "description": "Complete frontend authentication system developed with React 19 and Vite 6, focused on robust security and smooth UX. Implements end-to-end JWT flow, using Service Layer with Axios interceptors for automatic Access and Refresh token management. Architecture ensures data integrity with strict Zod validation, private route protection via React Router 7, and a responsive interface built with Tailwind CSS 4 and accessible Radix UI components.",
+        "tags": [
+          "React 19",
+          "TypeScript",
+          "Vite 6.2",
+          "Tailwind CSS 4.1",
+          "React Router 7.6",
+          "Axios Interceptors",
+          "Middleware",
+          "Proxy",
+          "JWT Auth",
+          "Zod",
+          "Radix UI"
+        ],
+        "image": "/assets/AUTH-SYSTEM.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/form-login-consuming-api-jwt-express",
+        "liveUrl": "https://form-login-consuming-api-jwt-express.onrender.com/"
+      },
+      {
+        "id": 10,
+        "title": "Auth API (Back-End) — JWT Backend & Express",
+        "status": "maintenance",
+        "description": "RESTful API specialized in identity management and defensive security, developed with Node.js and Express 5.1. Implements modular architecture with custom Services and Middlewares for JWT authentication and password encryption using BcryptJS. Persistence managed via Prisma ORM in PostgreSQL, with strict payload validation via Zod and CORS handling, ensuring a resilient service ready for integration with large-scale frontend applications.",
+        "tags": [
+          "Node.js",
+          "Express 5.1",
+          "TypeScript",
+          "Prisma ORM",
+          "PostgreSQL",
+          "JWT Auth",
+          "BcryptJS",
+          "Zod",
+          "Clean Architecture"
+        ],
+        "image": "/assets/API-CLIENT.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/api-jwt-express",
+        "liveUrl": ""
+      }
+    ],
+    "preview": "Preview of {{title}}",
+    "accessProject": "Access the project",
+    "usedTech": "Technologies used:",
+    "status": {
+      "completed": "Completed",
+      "in-progress": "In progress",
+      "maintenance": "Maintenance"
+    },
+    "viewGithub": "View {{title}} on GitHub",
+    "github": "GitHub",
+    "liveDeploy": "Project Deploy",
+    "accessLive": "Access the live project {{title}}"
+  },
+  "contact": {
+    "title_part1": "Let's",
+    "title_part2": "Talk?",
+    "subtitle": "I am open to new opportunities and collaborations on innovative projects.",
+    "info": {
+      "email": "E-mail",
+      "phone_label": "Phone / WhatsApp",
+      "phone_value": "+55 (65) 99207-9383",
+      "location": "Location",
+      "location_value": "Várzea Grande, MT - Brazil"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your E-mail",
+      "subject": "Subject",
+      "message": "Your Message",
+      "button": "Send message",
+      "button_loading": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again.",
+      "conn_error": "Connection error. Check your network."
+    },
+    "validation": {
+      "name": "Name must be at least 2 characters",
+      "email": "Enter a valid e-mail",
+      "subject": "Subject must be more descriptive",
+      "message": "Message must be at least 10 characters"
+    }
+  },
+  "loading": {
+    "sr_text": "Loading content",
+    "visible_text": "// Loading terminal data"
+  },
+  "error404": {
+    "title": "Page not found",
+    "description": "It seems you tried to access a route that doesn't exist or has been moved.",
+    "back_home": "Back to home",
+    "back_home_aria": "Go back to home page"
+  },
+  "error500": {
+    "title": "Unexpected error",
+    "description": "An error occurred while loading the data. Please try again later.",
+    "retry_button": "Try again",
+    "retry_aria": "Reload the page"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "aria_label": "Footer"
+  }
+}

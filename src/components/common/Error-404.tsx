@@ -1,9 +1,11 @@
 // src/components/common/Error404.tsx
 import { useNavigate } from "react-router";
 import { FileQuestion, ArrowLeft } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "../ui/button";
 
 const Error404 = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
@@ -25,11 +27,11 @@ const Error404 = () => {
       </div>
 
       <h1 id="error-title" className="mb-2 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Página não encontrada
+        {t("error404.title")}
       </h1>
 
       <p className="mb-8 max-w-md text-lg text-muted-foreground">
-        Parece que você tentou acessar uma rota que não existe ou foi movida.
+        {t("error404.description")}
       </p>
 
       <Button
@@ -43,13 +45,14 @@ const Error404 = () => {
           shadow-lg shadow-dracula-primary/30
           transition-all duration-300
         "
+        aria-label={t("error404.back_home_aria")}
       >
         <ArrowLeft
           className="w-5 h-5 transition-transform group-hover:-translate-x-1"
           aria-hidden="true"
         />
         <span className="font-semibold tracking-wide">
-          Voltar ao início
+          {t("error404.back_home")}
         </span>
       </Button>
     </main>

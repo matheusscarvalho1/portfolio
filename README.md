@@ -1,7 +1,7 @@
 # 🚀 Matheus Portfolio | High-Performance SPA
 
 
-// AJUSTAR AS IMAGENS DOS PROJETOS NO CELULAR E MELHORAR SOBRE MIM
+// FALTA AJUSTAR I18N nos textos que tem tag no meio
 
 Este portfólio é uma **Single Page Application (SPA)** de alta performance, desenvolvida para ser o estado da arte em velocidade e interatividade. O projeto utiliza React 19 e Vite 7, focando em uma experiência de usuário instantânea através de lazy loading e consultas de dados otimizadas via GraphQL.
 
@@ -14,6 +14,9 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **Vite 7**: Ferramenta de build que garante inicialização e carregamento instantâneos.
 - **TypeScript**: Adiciona segurança ao código através de tipagem estática.
 - **React Router 7**: Gerenciamento de rotas e navegação entre páginas.
+- **i18next & react-i18next**: Internacionalização (i18n) do portfólio, com suporte a múltiplos idiomas.
+- **Context API**: Gerenciamento manual do tema Dark/Light customizado, garantindo controle total sobre as classes CSS
+- **Apollo Client & GraphQL**: Consultas de dados inteligentes, cache eficiente e busca de informações em tempo real.
 
 ### Estilização & UI
 - **Tailwind CSS 4.1**: Framework utilitário de última geração para estilização performática.
@@ -21,12 +24,18 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **Radix UI & shadcn/ui**: Componentes baseados em primitivos acessíveis (WAI-ARIA).
 - **Swiper 12**: Slider otimizado para mobile com suporte a gestos e paginação dinâmica.
 - **Sonner**: Sistema de notificações (toasts) para feedback visual ao usuário.
-- **Context API**: Gerenciamento manual do tema Dark/Light customizado, garantindo controle total sobre as classes CSS
 - **Lucide React & React Icons**: Bibliotecas de ícones utilizadas em todo o projeto.
 
-### Gestão de Dados & APIs
+### Gestão de Formulários & Validação
 - **GraphQL & Apollo Client**: Consumo inteligente da API do GitHub, realizando buscas granulares de repositórios e estatísticas em tempo real, mantendo um cache local eficiente.
 - **React Hook Form & Zod**: Sistema de formulários leve com validação de esquema robusta.
+
+## Integrações de Serviços
+
+O projeto consome dados externos e serviços serverless para funcionalidades dinâmicas:
+
+- **GitHub API (GraphQL)**: Integração com a API do GitHub via Apollo Client para exibir repositórios, métricas e dados de perfil em tempo real.
+- **Web3Forms**: Serviço de mensageria que processa o formulário de contato e envia os dados diretamente para o e-mail.
 
 ## Arquitetura, Otimização & Performance
 
@@ -37,13 +46,14 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **React Compiler**: Eliminação de re-renders desnecessários através da nova engine de compilação do React.
 - **Acessibilidade Nativa**: Navegação completa via teclado, indicadores de foco e uso de atributos ARIA para tecnologias assistivas.
 
+### Lazy Loading de Páginas
 
-## Integrações de Serviços
+O portfólio utiliza lazy loading para todas as páginas, garantindo que o carregamento dos componentes aconteça sob demanda, ou seja, apenas quando o usuário navega até uma rota específica.
 
-O projeto consome dados externos e serviços serverless para funcionalidades dinâmicas:
+Essa abordagem permite reduzir significativamente o tamanho inicial do bundle, acelerar o tempo de carregamento da primeira página e melhorar a performance geral da aplicação, especialmente em dispositivos móveis ou conexões mais lentas.
 
-- **GitHub API (GraphQL)**: Integração com a API do GitHub via Apollo Client para exibir repositórios, métricas e dados de perfil em tempo real.
-- **Web3Forms**: Serviço de mensageria que processa o formulário de contato e envia os dados diretamente para o e-mail.
+O lazy loading é combinado com técnicas de code splitting, garantindo que cada página ou funcionalidade seja carregada separadamente, sem impactar o restante da aplicação. O resultado é uma SPA mais rápida, fluida e responsiva, proporcionando uma experiência de usuário mais imersiva e agradável.
+
 
 ## Estrutura de Pastas
  ```
@@ -53,6 +63,11 @@ src/
 ├── data/           # Configurações estáticas e dados mockados
 ├── graphql/        # Definições de Queries e Mutations (Schema)
 ├── hooks/          # Hooks customizados para lógica de UI
-├── lib/            # Configurações de libs (Tailwind, Motion, Utils)
+├── lib/            # Configurações de libs, helpers e utilitários
+│   ├── i18n.ts        # Configuração do i18next para internacionalização
+│   └── utils.ts       # Funções utilitárias (ex: cn para classes Tailwind)
+├── locales/        # Arquivos JSON de tradução por idioma
+│   ├── en.json
+│   └── pt.json
 └── pages/          # Componentes de página que funcionam como rotas (React Router)
 ```

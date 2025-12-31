@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Spinner } from "@/components/ui/spinner";
 
 const LoadingPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div
       className="flex flex-col items-center justify-center w-full h-screen gap-4"
@@ -15,8 +18,8 @@ const LoadingPage = () => {
       />
 
       <p className="text-dracula-secondary text-sm animate-dots">
-        <span className="sr-only">Carregando conteúdo</span>
-        <span aria-hidden="true">// Carregando dados do terminal</span>
+        <span className="sr-only">{t("loading.sr_text")}</span>
+        <span aria-hidden="true">{t("loading.visible_text")}</span>
       </p>
     </div>
   );

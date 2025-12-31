@@ -15,17 +15,20 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useTranslation } from "react-i18next";
 
-const contactSchema = z.object({
-  name: z.string().min(2, "O nome deve ter pelo menos 2 caracteres"),
-  email: z.email("Insira um e-mail válido"),
-  subject: z.string().min(5, "O assunto deve ser mais descritivo"),
-  message: z.string().min(10, "A mensagem deve ter pelo menos 10 caracteres"),
+const Contact = () => {
+  const { t } = useTranslation();
+
+  const contactSchema = z.object({
+  name: z.string().min(2, t("contact.validation.name")),
+  email: z.email(t("contact.validation.email")),
+  subject: z.string().min(5, t("contact.validation.subject")),
+  message: z.string().min(10, t("contact.validation.message")),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-const Contact = () => {
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -71,81 +74,67 @@ const Contact = () => {
   return (
     <main className="min-h-screen bg-background text-foreground p-6 md:p-12 font-jetbrains flex items-center justify-center transition-colors duration-500">
       <div className="max-w-6xl w-full flex flex-col xl:flex-row gap-12 xl:gap-20">
-        <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="flex-1 space-y-8"
-        >
+        <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} className="flex-1 space-y-8">
           <div className="text-center xl:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Vamos <span className="text-dracula-secondary">Conversar?</span>
+              {t("contact.title_part1")} <span className="text-dracula-secondary">{t("contact.title_part2")}</span>
             </h1>
-            <p className="text-muted-foreground text-lg">
-              Estou aberto a novas oportunidades e colaborações em projetos inovadores.
-            </p>
+            <p className="text-muted-foreground text-lg">{t("contact.subtitle")}</p>
           </div>
 
           <div className="space-y-6">
+            {/* E-mail */}
             <div className="flex items-center gap-6 group">
               <div className="w-12 h-12 bg-dracula-current rounded-xl flex items-center justify-center text-dracula-cyan border border-border group-hover:border-dracula-cyan transition-all">
                 <Mail size={24} />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest">E-mail</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-widest">{t("contact.info.email")}</p>
                 <p className="text-lg font-bold">matheuscarv.dev@gmail.com</p>
               </div>
             </div>
 
+            {/* Telefone */}
             <div className="flex items-center gap-6 group">
               <div className="w-12 h-12 bg-dracula-current rounded-xl flex items-center justify-center text-dracula-green border border-border group-hover:border-dracula-green transition-all">
                 <Phone size={24} />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest">Telefone / WhatsApp</p>
-                <p className="text-lg font-bold">(65) 99207-9383</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-widest">{t("contact.info.phone_label")}</p>
+                <p className="text-lg font-bold">{t("contact.info.phone_value")}</p>
               </div>
             </div>
 
+            {/* Localização */}
             <div className="flex items-center gap-6 group">
               <div className="w-12 h-12 bg-dracula-current rounded-xl flex items-center justify-center text-dracula-primary border border-border group-hover:border-dracula-primary transition-all">
                 <MapPin size={24} />
               </div>
               <div>
-                <p className="text-xs text-muted-foreground uppercase tracking-widest">Localização</p>
-                <p className="text-lg font-bold">Várzea Grande, MT - Brasil</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-widest">{t("contact.info.location")}</p>
+                <p className="text-lg font-bold">{t("contact.info.location_value")}</p>
               </div>
             </div>
           </div>
         </motion.div>
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          className="flex-1 bg-card p-8 md:p-10 rounded-3xl border border-border shadow-2xl transition-colors"
-        >
+
+        <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} className="flex-1 bg-card p-8 md:p-10 rounded-3xl border border-border shadow-2xl transition-colors">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  aria-label="Seu Nome"
-                  render={({ field }) => (
+                <FormField control={form.control} name="name" render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Seu Nome" className={`${inputStyles} h-14`} {...field} />
+                        <Input placeholder={t("contact.form.name")} className={`${inputStyles} h-14`} {...field} />
                       </FormControl>
                       <FormMessage className="text-dracula-red" />
                     </FormItem>
                   )}
                 />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  aria-label="Seu E-mail"
-                  render={({ field }) => (
+                <FormField control={form.control} name="email" render={({ field }) => (
                     <FormItem>
                       <FormControl>
-                        <Input placeholder="Seu E-mail" className={`${inputStyles} h-14`} {...field} />
+                        <Input placeholder={t("contact.form.email")} className={`${inputStyles} h-14`} {...field} />
                       </FormControl>
                       <FormMessage className="text-dracula-red" />
                     </FormItem>
@@ -153,32 +142,20 @@ const Contact = () => {
                 />
               </div>
 
-              <FormField
-                control={form.control}
-                name="subject"
-                aria-label="Assunto"
-                render={({ field }) => (
+              <FormField control={form.control} name="subject" render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Assunto" className={`${inputStyles} h-14`} {...field} />
+                      <Input placeholder={t("contact.form.subject")} className={`${inputStyles} h-14`} {...field} />
                     </FormControl>
                     <FormMessage className="text-dracula-red" />
                   </FormItem>
                 )}
               />
 
-              <FormField
-                control={form.control}
-                name="message"
-                aria-label="Sua mensagem"
-                render={({ field }) => (
+              <FormField control={form.control} name="message" render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Textarea 
-                        placeholder="Sua Mensagem" 
-                        className={`${inputStyles} min-h-37.5 py-4`} 
-                        {...field} 
-                      />
+                      <Textarea placeholder={t("contact.form.message")} className={`${inputStyles} min-h-37.5 py-4`} {...field} />
                     </FormControl>
                     <FormMessage className="text-dracula-red" />
                   </FormItem>
@@ -187,16 +164,14 @@ const Contact = () => {
 
               <Button 
                 type="submit"
-                aria-label="Enviar mensagem"
                 disabled={form.formState.isSubmitting}
-                className="w-full h-14 bg-dracula-green text-dracula-bg font-bold rounded-xl hover:opacity-80 transition-all gap-2 uppercase"
+                className="w-full h-14 text-dracula-white bg-dracula-green font-bold rounded-xl gap-2 uppercase transition-all hover:scale-105"
               >
-                {form.formState.isSubmitting ? "Enviando..." : "Enviar mensagem"} <Send size={18} />
+                {form.formState.isSubmitting ? t("contact.form.button_loading") : t("contact.form.button")} <Send size={18} />
               </Button>
             </form>
           </Form>
         </motion.div>
-
       </div>
     </main>
   );
