@@ -125,9 +125,14 @@
           "company": "Ginco Urbanismo • Cuiabá/MT - Hybrid",
           "stack": "Node.js | TypeScript | Fastify | Express | Next.js | Prisma ORM | Jest | Swagger",
           "activities": [
-            "Maintenance and evolution of internal company APIs and support for a real estate after-sales app with financial management and construction tracking.",
-            "Back-end support for more than 40 RESTful endpoints using Fastify.",
-            "Development of critical APIs with TypeScript and Prisma ORM, ensuring security and scalability."
+            "Maintenance and evolution of internal APIs and support for a real estate after-sales app with financial management and construction tracking.",
+            "Back-end support for more than 40 RESTful endpoints using Fastify, ensuring security and performance.",
+            "Development of critical APIs with TypeScript and Prisma ORM, following scalability standards and documentation with Swagger.",
+            "Integration of the application with Grafana and Loki for centralized monitoring and analysis of Fastify server logs.",
+            "Optimized API response time by 20% through targeted refactoring based on log insights.",
+            "Automated invoice sending via WhatsApp using Node.js, increasing sales team productivity by 60%.",
+            "Process modeling and automation with Fluig (BPMN), reducing manual process time by 50%.",
+            "Built a Next.js API for Google Analytics 4 integration, enabling advanced metric queries with date filters."
           ]
         },
         "frontend": {
@@ -136,10 +141,12 @@
           "company": "TAVWEB • Cuiabá/MT - Remote",
           "stack": "React.js | Next.js | TypeScript | Tailwind CSS | Material-UI | RESTful APIs",
           "activities": [
-            "Development of a B2G document management platform, structured for future AI implementation.",
-            "Worked on interface evolution, creating and refining complex components using React.js, Next.js and TypeScript.",
-            "Strategic use of Material-UI and Tailwind CSS to ensure responsiveness and strong visual consistency.",
-            "Focus on improving interactivity and user flows between internal teams and end clients."
+            "Development of a B2B document management platform with architecture prepared for AI implementation.",
+            "Interface evolution through creation and refinement of complex components using React.js, Next.js, and TypeScript.",
+            "Implementation of a reusable design system with Material-UI and Tailwind CSS, ensuring responsiveness and Figma prototype fidelity.",
+            "Performance optimization: reduced critical page loading time by 25% via lazy loading, image optimization, and parallel API calls.",
+            "Efficient integration with RESTful APIs in collaboration with the back-end team, increasing operational reliability.",
+            "Worked in a multidisciplinary team following Agile/Scrum methodology, with deliveries aligned to business goals."
           ]
         }
       }

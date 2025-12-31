@@ -125,9 +125,14 @@
           "company": "Ginco Urbanismo • Cuiabá/MT - Híbrido",
           "stack": "Node.js | TypeScript | Fastify | Express | Next.js | Prisma ORM | Jest | Swagger",
           "activities": [
-            "Manutenção e evolução de APIs internas da empresa e suporte ao app de pós-venda imobiliário com gestão financeira e acompanhamento de obras.",
-            "Sustentação de back-end com mais de 40 endpoints RESTful utilizando Fastify.",
-            "Desenvolvimento de APIs críticas com TypeScript e Prisma ORM, garantindo segurança e escalabilidade."
+            "Manutenção e evolução de APIs internas e suporte ao app de pós-venda imobiliário com gestão financeira e acompanhamento de obras.",
+            "Sustentação de back-end com mais de 40 endpoints RESTful utilizando Fastify, garantindo segurança e performance.",
+            "Desenvolvimento de APIs críticas com TypeScript e Prisma ORM, seguindo padrões de escalabilidade e documentação com Swagger.",
+            "Integração da aplicação com Grafana e Loki para monitoramento e análise centralizada de logs do servidor Fastify.",
+            "Otimização de 20% no tempo de resposta de APIs Node.js através de refatoração direcionada baseada em insights dos logs.",
+            "Automação de envio de boletos via WhatsApp com Node.js, aumentando a produtividade da equipe de vendas em 60%.",
+            "Modelagem e automação de processos com Fluig (BPMN), reduzindo tempo de processos manuais em 50%.",
+            "Criação de API em Next.js para integração com Google Analytics 4, permitindo consultas avançadas de métricas com filtros por data."
           ]
         },
         "frontend": {
@@ -136,10 +141,12 @@
           "company": "TAVWEB • Cuiabá/MT - Remoto",
           "stack": "React.js | Next.js | TypeScript | Tailwind CSS | Material-UI | RESTful APIs",
           "activities": [
-            "Desenvolvimento de plataforma B2G de gerenciamento documental, estruturada para futura implementação de IA.",
-            "Atuação na evolução da interface, criando e refinando componentes complexos com React.js, Next.js e TypeScript.",
-            "Uso estratégico de Material-UI e Tailwind CSS para assegurar responsividade e alta consistência visual.",
-            "Foco no refinamento de interatividade e fluxos de usuários entre setores e clientes finais."
+            "Desenvolvimento de plataforma B2G para gerenciamento documental, com arquitetura preparada para implementação de IA.",
+            "Evolução da interface com criação e refinamento de componentes complexos em React.js, Next.js e TypeScript.",
+            "Implementação de design system reutilizável com Material-UI e Tailwind CSS, garantindo responsividade e fidelidade aos protótipos do Figma.",
+            "Otimização de performance: redução de 25% no carregamento de páginas críticas via lazy loading, otimização de imagens e paralelização de chamadas API.",
+            "Integração eficiente com APIs RESTful em colaboração com a equipe de back-end, aumentando confiabilidade das operações.",
+            "Atuação em equipe multidisciplinar seguindo metodologia ágil (Scrum), com entregas alinhadas aos objetivos do negócio."
           ]
         }
       }
