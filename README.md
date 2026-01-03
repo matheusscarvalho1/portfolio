@@ -1,8 +1,5 @@
 # 🚀 Matheus Portfolio | High-Performance SPA
 
-
-// AJUSTAR AS IMAGENS DOS PROJETOS NO CELULAR E MELHORAR SOBRE MIM
-
 Este portfólio é uma **Single Page Application (SPA)** de alta performance, desenvolvida para ser o estado da arte em velocidade e interatividade. O projeto utiliza React 19 e Vite 7, focando em uma experiência de usuário instantânea através de lazy loading e consultas de dados otimizadas via GraphQL.
 
 O foco principal foi o desenvolvimento de uma interface imersiva e acessível, aplicando rigorosos padrões de Clean Code e Performance Optimization para garantir fluidez em dispositivos móveis e desktops.
