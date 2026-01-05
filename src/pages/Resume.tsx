@@ -49,8 +49,8 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
                 aria-label={`Visualizar a seção ${item.label}`}
                 className={`h-16 justify-between text-lg border-2 transition-all font-bold 
                   ${view === item.id 
-                    ? "border-dracula-green text-dracula-green bg-card hover:bg-card hover:text-dracula-green hover:border-dracula-green/50" 
-                    : "border-border text-muted-foreground bg-transparent hover:text-dracula-green hover:border-dracula-green/50"
+                    ? "border-dracula-cyan text-dracula-cyan bg-card hover:bg-card hover:text-dracula-cyan hover:border-dracula-cyan/50" 
+                    : "border-border text-muted-foreground bg-transparent hover:text-dracula-cyan hover:border-dracula-cyan/50"
                   }`}
               >
                 <span className="flex items-center gap-4">
@@ -64,7 +64,7 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
         <Button
           asChild
           aria-label={t("resume.download.aria")}
-          className="w-full h-16 border-2 font-bold transition-all border-dracula-primary text-dracula-primary bg-transparent hover:text-background hover:bg-dracula-primary">
+          className="w-full h-16 border-2 font-bold transition-all border-dracula-green text-dracula-green bg-transparent hover:text-background hover:bg-dracula-green">
             <a href="/matheus-scarvalho-cv.pdf" download>
               {t("resume.download.label")}
               <DownloadIcon className="ml-3 w-5 h-5" />

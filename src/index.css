@@ -203,7 +203,7 @@
   }
 
   .swiper-pagination-bullet-active {
-    background: var(--color-dracula-primary) !important;
+    background: var(--color-dracula-cyan) !important;
     opacity: 1;
     width: 25px;
     border-radius: 5px;
@@ -212,7 +212,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    color: var(--color-dracula-primary) !important;
+    color: var(--color-dracula-foreground) !important;
     scale: 0.8;
     top: 50% !important;
     transform: translateY(-50%);
