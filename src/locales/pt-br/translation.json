@@ -431,7 +431,7 @@
       },
       {
         "id": 10,
-        "title": "Auth API (Back-End) — Backend JWT & Express",
+        "title": "AuthSystem APIs (Back-End) — Backend JWT & Node.js (Express)",
         "status": "maintenance",
         "description": "API RESTful especializada em gestão de identidades e segurança defensiva, desenvolvida com Node.js e Express 5.1. O sistema implementa uma arquitetura modular baseada em Services e Middlewares customizados para autenticação JWT e criptografia de senhas com BcryptJS. A persistência é gerenciada via Prisma ORM em PostgreSQL, contando com validação rigorosa de payloads via Zod e tratamento de CORS, garantindo um serviço resiliente e preparado para integração com aplicações frontend de larga escala.",
         "tags": [

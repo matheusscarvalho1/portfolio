@@ -432,7 +432,7 @@
       },
       {
         "id": 10,
-        "title": "Auth API (Back-End) — JWT Backend & Express",
+        "title": "AuthSystem APIs (Back-End) — Backend JWT & Node.js (Express)",
         "status": "maintenance",
         "description": "RESTful API specialized in identity management and defensive security, developed with Node.js and Express 5.1. Implements modular architecture with custom Services and Middlewares for JWT authentication and password encryption using BcryptJS. Persistence managed via Prisma ORM in PostgreSQL, with strict payload validation via Zod and CORS handling, ensuring a resilient service ready for integration with large-scale frontend applications.",
         "tags": [
