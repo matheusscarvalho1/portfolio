@@ -115,7 +115,7 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
                       </p>
                       <div className="space-y-4">
                           <h4 className="text-dracula-primary font-bold uppercase text-xs tracking-widest">{t("resume.about.expertise.title")}</h4>
-                          <p className="text-muted-foreground text-sm">
+                          <p className="text-foreground text-sm">
                             <Trans
                               key={i18n.language}
                               i18nKey="resume.about.expertise.text"
