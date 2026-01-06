@@ -306,6 +306,24 @@
       },
       {
         "id": 4,
+        "title": "Find Hope Hub — Localização de Desaparecidos",
+        "status": "completed",
+        "description": "Plataforma de utilidade pública para localização de desaparecidos que se destaca pela robustez de sua engenharia e automação. O diferencial do projeto é sua pipeline de CI/CD totalmente integrada via GitHub Actions: cada atualização passa por portões de qualidade rigorosos, incluindo 12 testes automatizados (Vitest com mocks de API), análise estática (ESLint 9) e formatação (Prettier). A aplicação é 100% dockerizada com pnpm v9 e configurada em modo SPA resiliente, garantindo paridade entre ambientes. O deploy contínuo no Render é disparado automaticamente apenas após a aprovação de todos os testes, utilizando secrets e environments para máxima segurança de dados.",
+        "tags": [
+         "React 19",
+          "CI/CD (GitHub Actions)",
+          "Docker (SPA Mode)",
+          "Vitest & Mocks",
+          "TypeScript",
+          "Zod",
+          "Render Deployment"
+        ],
+        "image": "/assets/HOPE-03.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/find-hope-hub",
+        "liveUrl": "https://find-hope-hub.onrender.com/"
+      },
+      {
+        "id": 5,
         "title": "Portfolio",
         "status": "completed",
         "description": "Vitrine tecnológica desenvolvida como uma SPA de ultra performance, explorando o potencial máximo do ecossistema React em 2025. O projeto utiliza o React Compiler e Vite 7 para garantir uma navegação instantânea e livre de re-renders desnecessários. A experiência é sustentada por uma arquitetura de dados moderna com GraphQL e Apollo Client, além de uma interface imersiva orquestrada com Motion e Swiper 12. Cada detalhe foi otimizado via Code Splitting, priorizando acessibilidade e uma fluidez mobile-first rigorosa.",
@@ -328,7 +346,7 @@
         "liveUrl": "https://matheusscarvalho-dev.onrender.com/"
       },
       {
-        "id": 5,
+        "id": 6,
         "title": "Fastify API — Gestão de Cursos & RBAC",
         "status": "completed",
         "description": "API RESTful de alta performance desenvolvida com Fastify 5.5 e TypeScript, utilizando Drizzle ORM para uma camada de dados ultra-rápida em PostgreSQL. O sistema implementa um controle de acesso rigoroso RBAC (Role-Based Access Control) com distinção entre 'student' e 'manager', assegurado por autenticação JWT e criptografia Argon2. A arquitetura prioriza a confiabilidade através de uma pipeline de testes de integração com Vitest e ambientes isolados via Docker, contando com documentação automatizada via Swagger/Scalar UI.",
@@ -351,7 +369,7 @@
         "liveUrl": ""
       },
       {
-        "id": 6,
+        "id": 7,
         "title": "Money — Gestão Financeira Mobile",
         "status": "completed",
         "description": "Aplicativo nativo para controle de finanças pessoais, consolidando o domínio do ecossistema React Native (Expo SDK 53). O projeto utiliza Expo Router v4 para navegação baseada em arquivos e implementa persistência de dados local offline com AsyncStorage. A experiência foca em uma UX refinada através de feedbacks táteis (Haptics), animações fluidas com Reanimated 3 e gerenciamento avançado de teclados nativos e seletores de data, garantindo uma interface responsiva e intuitiva para o usuário final.",
@@ -368,27 +386,6 @@
         "image": "/assets/MONEY-04-4x.png",
         "githubUrl": "https://github.com/matheusscarvalho1/transactions-manager",
         "liveUrl": ""
-      },
-      {
-        "id": 7,
-        "title": "Find Hope Hub — Localização de Desaparecidos",
-        "status": "completed",
-        "description": "Plataforma de utilidade pública projetada para centralizar informações e auxiliar na localização de pessoas desaparecidas. Desenvolvida com React 19 e Vite 7, a SPA foca em resiliência e integridade de dados, implementando busca avançada em tempo real e formulários validados com Zod. O projeto destaca-se pelo gerenciamento seguro de uploads e o uso de Date Pickers nativos para eliminar inconsistências, garantindo uma interface acessível e performática em situações de urgência.",
-        "tags": [
-          "React 19",
-          "TypeScript",
-          "Vite 7",
-          "Tailwind CSS 4.1",
-          "React Router 7",
-          "React Hook Form",
-          "Zod",
-          "Vitest",
-          "Docker",
-          "shadcn/ui"
-        ],
-        "image": "/assets/HOPE-03.png",
-        "githubUrl": "https://github.com/matheusscarvalho1/find-hope-hub",
-        "liveUrl": "https://find-hope-hub.onrender.com/"
       },
       {
         "id": 8,

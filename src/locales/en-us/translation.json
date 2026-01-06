@@ -304,8 +304,27 @@
         "githubUrl": "https://github.com/matheusscarvalho1/fsw-donalds",
         "liveUrl": "https://fsw-donalds-red.vercel.app/fsw-donalds"
       },
-      {
+        {
         "id": 4,
+        "title": "Find Hope Hub — Missing Persons Location",
+        "status": "completed",
+        "description": "A public utility platform for locating missing persons, distinguished by its robust CI/CD pipeline and professional infrastructure. The project's core strength lies in its automated quality gates via GitHub Actions, executing 12 comprehensive tests (Vitest with API mocking), ESLint 9 linting, and Prettier formatting before every release. It features a 100% dockerized architecture using pnpm v9 in resilient SPA mode, ensuring environment parity. Continuous Deployment to Render is triggered only after passing all security and quality checks, utilizing GitHub Secrets and Environments for secure sensitive data management.",
+        "tags": [
+          "React 19",
+          "CI/CD (GitHub Actions)",
+          "Docker (SPA Mode)",
+          "Vitest & Mocks",
+          "TypeScript",
+          "Zod",
+          "Render Deployment",
+          "Tailwind CSS 4"
+        ],
+        "image": "/assets/HOPE-03.png",
+        "githubUrl": "https://github.com/matheusscarvalho1/find-hope-hub",
+        "liveUrl": "https://find-hope-hub.onrender.com/"
+      },
+      {
+        "id": 5,
         "title": "Portfolio",
         "status": "completed",
         "description": "Tech showcase developed as a high-performance SPA, exploring the full potential of the React ecosystem in 2025. Uses React Compiler and Vite 7 to ensure instant navigation and avoid unnecessary re-renders. Supported by modern data architecture with GraphQL and Apollo Client, plus an immersive interface orchestrated with Motion and Swiper 12. Every detail optimized with code splitting, prioritizing accessibility and strict mobile-first fluidity.",
@@ -328,7 +347,7 @@
         "liveUrl": "https://matheusscarvalho-dev.onrender.com/"
       },
       {
-        "id": 5,
+        "id": 6,
         "title": "Fastify API — Courses Management & RBAC",
         "status": "completed",
         "description": "High-performance RESTful API developed with Fastify 5.5 and TypeScript, using Drizzle ORM for ultra-fast data layer with PostgreSQL. Implements strict RBAC (Role-Based Access Control) distinguishing 'student' and 'manager', secured with JWT authentication and Argon2 encryption. Reliability ensured through integration testing pipeline with Vitest and isolated Docker environments, plus automated documentation via Swagger/Scalar UI.",
@@ -351,7 +370,7 @@
         "liveUrl": ""
       },
       {
-        "id": 6,
+        "id": 7,
         "title": "Money — Mobile Financial Management",
         "status": "completed",
         "description": "Native app for personal finance management, mastering the React Native ecosystem (Expo SDK 53). Uses Expo Router v4 for file-based navigation and offline local data persistence with AsyncStorage. Focused on refined UX through haptic feedback, smooth animations with Reanimated 3, advanced keyboard handling, and native date pickers, ensuring a responsive and intuitive interface for the end user.",
@@ -368,27 +387,6 @@
         "image": "/assets/MONEY-04-4x.png",
         "githubUrl": "https://github.com/matheusscarvalho1/transactions-manager",
         "liveUrl": ""
-      },
-      {
-        "id": 7,
-        "title": "Find Hope Hub — Missing Persons Location",
-        "status": "completed",
-        "description": "Public utility platform designed to centralize information and assist in locating missing persons. Developed with React 19 and Vite 7, the SPA focuses on resilience and data integrity, implementing advanced real-time search and Zod-validated forms. Stands out with secure upload management and native date pickers to avoid inconsistencies, ensuring accessible and performant interface in urgent situations.",
-        "tags": [
-          "React 19",
-          "TypeScript",
-          "Vite 7",
-          "Tailwind CSS 4.1",
-          "React Router 7",
-          "React Hook Form",
-          "Zod",
-          "Vitest",
-          "Docker",
-          "shadcn/ui"
-        ],
-        "image": "/assets/HOPE-03.png",
-        "githubUrl": "https://github.com/matheusscarvalho1/find-hope-hub",
-        "liveUrl": "https://find-hope-hub.onrender.com/"
       },
       {
         "id": 8,
