@@ -131,7 +131,7 @@
             "Integration of the application with Grafana and Loki for centralized monitoring and analysis of Fastify server logs.",
             "Optimized API response time by 20% through targeted refactoring based on log insights.",
             "Automated invoice sending via WhatsApp using Node.js, increasing sales team productivity by 60%.",
-            "Process modeling and automation with Fluig (BPMN), reducing manual process time by 50%.",
+            "Process modeling and automation with Fluig (BPM/BPMN), reducing manual process time by 50%.",
             "Built a Next.js API for Google Analytics 4 integration, enabling advanced metric queries with date filters."
           ]
         },

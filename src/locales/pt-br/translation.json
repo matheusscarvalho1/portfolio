@@ -131,7 +131,7 @@
             "Integração da aplicação com Grafana e Loki para monitoramento e análise centralizada de logs do servidor Fastify.",
             "Otimização de 20% no tempo de resposta de APIs Node.js através de refatoração direcionada baseada em insights dos logs.",
             "Automação de envio de boletos via WhatsApp com Node.js, aumentando a produtividade da equipe de vendas em 60%.",
-            "Modelagem e automação de processos com Fluig (BPMN), reduzindo tempo de processos manuais em 50%.",
+            "Modelagem e automação de processos com Fluig (BPM/BPMN), reduzindo tempo de processos manuais em 50%.",
             "Criação de API em Next.js para integração com Google Analytics 4, permitindo consultas avançadas de métricas com filtros por data."
           ]
         },
