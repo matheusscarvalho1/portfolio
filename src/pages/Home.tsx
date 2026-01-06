@@ -65,7 +65,7 @@ const Home = () => {
                                 size="lg" 
                                 className="h-12 px-6 text-md bg-transparent border-dracula-green text-dracula-green hover:bg-dracula-green hover:text-background transition-all font-bold border-2"
                             >
-                                <a href="/matheus-scarvalho-cv.pdf" download aria-label={t("home.aria.download")}>
+                                <a href="/matheus-scarvalho-cv_v2.pdf" download aria-label={t("home.aria.download")}>
                                     {t("home.download_cv")} <DownloadIcon className="w-5 h-5 ml-2" aria-hidden="true" />
                                 </a>
                             </Button>

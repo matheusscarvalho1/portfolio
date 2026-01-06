@@ -65,7 +65,7 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
           asChild
           aria-label={t("resume.download.aria")}
           className="w-full h-16 border-2 font-bold transition-all border-dracula-green text-dracula-green bg-transparent hover:text-background hover:bg-dracula-green">
-            <a href="/matheus-scarvalho-cv.pdf" download>
+            <a href="/matheus-scarvalho-cv_v2.pdf" download>
               {t("resume.download.label")}
               <DownloadIcon className="ml-3 w-5 h-5" />
             </a>
