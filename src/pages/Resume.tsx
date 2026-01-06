@@ -87,7 +87,7 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
                     <h3 className="text-3xl font-bold text-dracula-cyan mb-4">
                       {t("resume.about.title")}
                     </h3>
-                    <p className="text-dracula-secondary font-mono text-sm mb-6 uppercase tracking-widest">
+                    <p className="text-dracula-primary font-mono text-sm mb-6 uppercase tracking-widest">
                       {t("resume.about.role")}
                     </p>
                   </div>
@@ -110,21 +110,21 @@ const navItems: { id: ViewOption; label: string; icon: React.ReactNode }[] = [
                         <Trans
                               key={i18n.language}
                               i18nKey="resume.about.description.p1"
-                              components={{1: <strong className="text-dracula-cyan" />}}
+                              components={{1: <strong className="text-dracula-orange" />}}
                             />
                       </p>
                       <div className="space-y-4">
-                          <h4 className="text-dracula-secondary font-bold uppercase text-xs tracking-widest">{t("resume.about.expertise.title")}</h4>
+                          <h4 className="text-dracula-primary font-bold uppercase text-xs tracking-widest">{t("resume.about.expertise.title")}</h4>
                           <p className="text-muted-foreground text-sm">
                             <Trans
                               key={i18n.language}
                               i18nKey="resume.about.expertise.text"
-                              components={{1: <strong className="text-dracula-cyan" />}}
+                              components={{1: <strong className="text-dracula-orange" />}}
                             />
                           </p>
                       </div>
                       <div className="bg-background p-6 rounded-2xl border border-border">
-                          <h4 className="text-dracula-orange font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
+                          <h4 className="text-dracula-primary font-bold uppercase text-xs tracking-widest mb-4">Soft Skills</h4>
                           <div className="flex flex-wrap gap-2">
                               {(
                               t("resume.about.soft_skills.items", {
