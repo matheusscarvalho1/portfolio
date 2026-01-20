@@ -432,20 +432,19 @@
       },
       {
         "id": 10,
-        "title": "AuthSystem API — Enterprise JWT Security (Node.js & Swagger)",
+        "title": "AuthSystem APIs (Back-End) — Node.js, Express 5.1 & Swagger",
         "status": "completed",
-        "description": "High-performance RESTful API engineered with a Controller-Service-Repository architecture for maximum scalability. It features an advanced security ecosystem including JWT (Access/Refresh Tokens), defensive password policies via Zod Regex, and BcryptJS hashing. The system provides an interactive Swagger UI (OpenAPI 3.0) for real-time endpoint testing, is powered by Prisma ORM with PostgreSQL, and utilizes tsup for optimized production builds, delivering a resilient and fully type-safe backend solution.",
+        "description": "High-performance RESTful API engineered with a Controller-Service-Repository architecture, ensuring total separation of concerns and scalability. The ecosystem is fully containerized with Docker and features automated PostgreSQL orchestration. It implements an advanced security layer with JWT (Access/Refresh Tokens), BcryptJS hashing, and defensive password policies via Zod. Includes interactive Swagger UI (OpenAPI 3.0) documentation, Prisma ORM persistence, and high-speed builds with tsup, delivering a resilient and 100% type-safe backend solution.",
         "tags": [
           "Node.js 24",
           "Express 5.1",
           "TypeScript 5.8",
           "Prisma ORM",
-          "Docker",
+          "Docker Compose",
           "Swagger UI",
           "JWT (Access/Refresh)",
           "Zod Validation",
-          "Repository Pattern",
-          "pnpm"
+          "Repository Pattern"
         ],
         "image": "/assets/API-CLIENT.png",
         "githubUrl": "https://github.com/matheusscarvalho1/api-jwt-express",
