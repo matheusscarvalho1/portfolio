@@ -431,23 +431,25 @@
       },
       {
         "id": 10,
-        "title": "AuthSystem APIs (Back-End) — Backend JWT & Node.js (Express)",
-        "status": "maintenance",
-        "description": "API RESTful especializada em gestão de identidades e segurança defensiva, desenvolvida com Node.js e Express 5.1. O sistema implementa uma arquitetura modular baseada em Services e Middlewares customizados para autenticação JWT e criptografia de senhas com BcryptJS. A persistência é gerenciada via Prisma ORM em PostgreSQL, contando com validação rigorosa de payloads via Zod e tratamento de CORS, garantindo um serviço resiliente e preparado para integração com aplicações frontend de larga escala.",
+        "title": "AuthSystem APIs (Back-End) — Node.js, Express 5.1 & Swagger",
+        "status": "completed",
+        "description": "API RESTful de alta performance projetada sob a arquitetura Controller-Service-Repository, garantindo total separação de responsabilidades e escalabilidade. O sistema implementa um ecossistema de segurança avançado com autenticação JWT (Access/Refresh Tokens), criptografia BcryptJS e políticas defensivas de senha via Regex no Zod. Conta com documentação interativa via Swagger (OpenAPI 3.0), persistência otimizada com Prisma ORM em PostgreSQL e build acelerado com tsup, oferecendo um backend resiliente, totalmente tipado em TypeScript e pronto para produção.",
         "tags": [
-          "Node.js",
+          "Node.js 24",
           "Express 5.1",
           "TypeScript",
           "Prisma ORM",
-          "PostgreSQL",
-          "JWT Auth",
-          "BcryptJS",
-          "Zod",
-          "Clean Architecture"
+          "Docker",
+          "Swagger UI",
+          "JWT (Access/Refresh)",
+          "Zod Validation",
+          "Repository Pattern",
+          "tsup Build",
+          "pnpm"
         ],
         "image": "/assets/API-CLIENT.png",
         "githubUrl": "https://github.com/matheusscarvalho1/api-jwt-express",
-        "liveUrl": ""
+        "liveUrl": "https://api-jwt-express.onrender.com"
       }
     ],
     "preview": "Preview do {{title}}",
