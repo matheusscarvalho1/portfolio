@@ -1,6 +1,6 @@
-# 🚀 Matheus Portfolio
-
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop-01.png)
+
+# 🚀 Matheus Portfolio
 
 Este projeto é uma aplicação web moderna desenvolvida como portfólio profissional, com foco em performance, acessibilidade e experiência do usuário.  
 O objetivo é apresentar meus projetos, habilidades técnicas e informações profissionais de forma clara e interativa.
