@@ -20,6 +20,17 @@ O objetivo é apresentar meus projetos, habilidades técnicas e informações pr
 - 👤 [Autor](#-autor)
 
 
+<h2 id="funcionalidades">✨ Funcionalidades</h2>
+
+- 🌎 Portfólio multilíngue (PT/EN)
+- 🌙 Tema Dark / Light
+- 📱 Design totalmente responsivo
+- 🔍 SEO otimizado
+- 🎬 Animações suaves e interativas
+- 🔗 Integração com GitHub (API GraphQL)
+- ⚡ Cache inteligente
+- 📦 Lazy loading
+- ♿ Acessibilidade (WAI-ARIA e navegação por teclado)
 
 <h2 id="tecnologias-utilizadas">Tecnologias </h2>
 
@@ -145,19 +156,6 @@ src/
 ### Contatos
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/contatos.png)
 
-
-
-<h2 id="funcionalidades">✨ Funcionalidades</h2>
-
-- 🌎 Portfólio multilíngue (PT/EN)
-- 🌙 Tema Dark / Light
-- 📱 Design totalmente responsivo
-- 🔍 SEO otimizado
-- 🎬 Animações suaves e interativas
-- 🔗 Integração com GitHub (API GraphQL)
-- ⚡ Cache inteligente
-- 📦 Lazy loading
-- ♿ Acessibilidade (WAI-ARIA e navegação por teclado)
 
 
 
