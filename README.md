@@ -63,6 +63,7 @@ O lazy loading é combinado com técnicas de code splitting, garantindo que cada
 
 
 <h2 id="estrutura-de-pastas">📂 Estrutura de Pastas</h2>
+
  ```
 src/
 ├── apollo/         # Configurações do cliente Apollo e cache global
