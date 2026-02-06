@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-mobile.png)
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop-01.png)
 
 # 🚀 Matheus Portfolio
 
@@ -7,12 +7,19 @@ O objetivo é apresentar meus projetos, habilidades técnicas e informações pr
 
 ## 📌 Navegação Rápida
 
-- 📸 [Demonstração do Projeto](#demonstracao)
-- 🛠️ [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- 🔗 [Integrações de Serviços](#integrações-de-serviços)
+- 🚀 [Visão Geral](#-matheus-portfolio)
+- ✨ [Funcionalidades](#funcionalidades)
+- 🛠️ [Tecnologias](#tecnologias-utilizadas)
+- 🔗 [Integrações](#integracoes-de-servicos)
 - ⚙️ [Arquitetura & Performance](#arquitetura-otimizacao-performance)
-- ⚙️ [Funcionalidades](#funcionalidades)
+- 💻 [Instalação Local](#instalacao)
+- ☁️ [Deploy](#deploy)
 - 📂 [Estrutura de Pastas](#estrutura-de-pastas)
+- 📸 [Demonstração](#demonstracao)
+- 🌐 [Links](#links)
+- 👤 [Autor](#-autor)
+
+
 
 <h2 id="tecnologias-utilizadas">Tecnologias </h2>
 
@@ -63,6 +70,41 @@ Essa abordagem permite reduzir significativamente o tamanho inicial do bundle, a
 O lazy loading é combinado com técnicas de code splitting, garantindo que cada página ou funcionalidade seja carregada separadamente, sem impactar o restante da aplicação. O resultado é uma SPA mais rápida, fluida e responsiva, proporcionando uma experiência de usuário mais imersiva e agradável.
 
 
+<h2 id="instalacao">⚙️ Como Executar o Projeto Localmente</h2>
+
+### Pré-requisitos
+- Node.js (v18+)
+- pnpm ou npm
+
+### Passos
+
+```bash
+# Clonar o repositório
+git clone https://github.com/matheusscarvalho1/portfolio.git
+
+# Acessar o projeto
+cd portfolio
+
+# Instalar dependências
+pnpm install
+# ou
+npm install
+
+# Rodar em ambiente de desenvolvimento
+pnpm dev
+# ou
+npm run dev
+
+# Acesse em: http://localhost:5173
+```
+
+
+<h2 id="deploy">🚀 Deploy</h2>
+
+Este projeto está em produção utilizando a plataforma **Render**, com build automatizado a partir do repositório GitHub.
+
+Cada atualização na branch principal gera um novo deploy automaticamente, acesse: https://matheusscarvalho-dev.onrender.com/
+
 <h2 id="estrutura-de-pastas">📂 Estrutura de Pastas</h2>
 
  ```
@@ -85,7 +127,7 @@ src/
 <h2 id="demonstracao">📸 Demonstração do Projeto</h2>
 
 ### Home 
-![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop.png)
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop-02.png)
 <hr>
 
 ### Serviços
