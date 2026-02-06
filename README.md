@@ -1,11 +1,20 @@
 # 🚀 Matheus Portfolio | High-Performance SPA
 
+## 📌 Navegação Rápida
 
+- 📸 [Demonstração do Projeto](#demonstration)
+- 📄 [Detalhes Técnicos](#detalhes)
+- 🛠️ [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- 🔗 [Integrações de Serviços](#integrações-de-serviços)
+- ⚙️ [Arquitetura & Performance](#arquitetura-otimização--performance)
+- 📂 [Estrutura de Pastas](#estrutura-de-pastas)
+
+<h2 id="detalhes">📄 Detalhes Técnicos</h2>
 Este portfólio é uma **Single Page Application (SPA)** de alta performance, desenvolvida para ser o estado da arte em velocidade e interatividade. O projeto utiliza React 19 e Vite 7, focando em uma experiência de usuário instantânea através de lazy loading e consultas de dados otimizadas via GraphQL.
 
 O foco principal foi o desenvolvimento de uma interface imersiva e acessível, aplicando rigorosos padrões de Clean Code e Performance Optimization para garantir fluidez em dispositivos móveis e desktops.
 
-## 🛠️ Tecnologias Utilizadas
+<h2 id="tecnologias-utilizadas">🛠️ Tecnologias Utilizadas</h2>
 
 ### Core & Estrutura
 - **React 19**: Biblioteca principal para construção da interface.
@@ -28,14 +37,14 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **GraphQL & Apollo Client**: Consumo inteligente da API do GitHub, realizando buscas granulares de repositórios e estatísticas em tempo real, mantendo um cache local eficiente.
 - **React Hook Form & Zod**: Sistema de formulários leve com validação de esquema robusta.
 
-## Integrações de Serviços
+<h2 id="integrações-de-serviços">🔗 Integrações de Serviços</h2>
 
 O projeto consome dados externos e serviços serverless para funcionalidades dinâmicas:
 
 - **GitHub API (GraphQL)**: Integração com a API do GitHub via Apollo Client para exibir repositórios, métricas e dados de perfil em tempo real.
 - **Web3Forms**: Serviço de mensageria que processa o formulário de contato e envia os dados diretamente para o e-mail.
 
-## Arquitetura, Otimização & Performance
+<h2 id="arquitetura-otimização--performance">⚙️ Arquitetura, Otimização & Performance</h2>
 
 - **Single Page Application (SPA)**: Toda a navegação é gerenciada no lado do cliente (client-side) pelo React Router, proporcionando transições instantâneas.
 - **Code Splitting & Lazy Loading**: Uso de React.lazy e Suspense para carregar componentes de rota sob demanda, reduzindo o tamanho inicial do bundle e o tempo de carregamento da primeira página.
@@ -53,7 +62,7 @@ Essa abordagem permite reduzir significativamente o tamanho inicial do bundle, a
 O lazy loading é combinado com técnicas de code splitting, garantindo que cada página ou funcionalidade seja carregada separadamente, sem impactar o restante da aplicação. O resultado é uma SPA mais rápida, fluida e responsiva, proporcionando uma experiência de usuário mais imersiva e agradável.
 
 
-## Estrutura de Pastas
+<h2 id="estrutura-de-pastas">📂 Estrutura de Pastas</h2>
  ```
 src/
 ├── apollo/         # Configurações do cliente Apollo e cache global
@@ -69,3 +78,6 @@ src/
 │   └── pt.json
 └── pages/          # Componentes de página que funcionam como rotas (React Router)
 ```
+
+<h2 id="demonstration">📸 Demonstração do Projeto</h2>
+
