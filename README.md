@@ -1,22 +1,23 @@
-# 🚀 Matheus Portfolio | High-Performance SPA
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-mobile.png)
+
+# 🚀 Matheus Portfolio
+
+Este projeto é uma aplicação web moderna desenvolvida como portfólio profissional, com foco em performance, acessibilidade e experiência do usuário.  
+O objetivo é apresentar meus projetos, habilidades técnicas e informações profissionais de forma clara e interativa.
 
 ## 📌 Navegação Rápida
 
-- 📸 [Demonstração do Projeto](#demonstration)
-- 📄 [Detalhes Técnicos](#detalhes)
+- 📸 [Demonstração do Projeto](#demonstracao)
 - 🛠️ [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - 🔗 [Integrações de Serviços](#integrações-de-serviços)
-- ⚙️ [Arquitetura & Performance](#arquitetura-otimização--performance)
+- ⚙️ [Arquitetura & Performance](#arquitetura-otimizacao-performance)
+- ⚙️ [Funcionalidades](#funcionalidades)
 - 📂 [Estrutura de Pastas](#estrutura-de-pastas)
 
-<h2 id="detalhes">📄 Detalhes Técnicos</h2>
-Este portfólio é uma **Single Page Application (SPA)** de alta performance, desenvolvida para ser o estado da arte em velocidade e interatividade. O projeto utiliza React 19 e Vite 7, focando em uma experiência de usuário instantânea através de lazy loading e consultas de dados otimizadas via GraphQL.
-
-O foco principal foi o desenvolvimento de uma interface imersiva e acessível, aplicando rigorosos padrões de Clean Code e Performance Optimization para garantir fluidez em dispositivos móveis e desktops.
-
-<h2 id="tecnologias-utilizadas">🛠️ Tecnologias Utilizadas</h2>
+<h2 id="tecnologias-utilizadas">Tecnologias </h2>
 
 ### Core & Estrutura
+
 - **React 19**: Biblioteca principal para construção da interface.
 - **Vite 7**: Ferramenta de build que garante inicialização e carregamento instantâneos.
 - **TypeScript**: Adiciona segurança ao código através de tipagem estática.
@@ -37,14 +38,14 @@ O foco principal foi o desenvolvimento de uma interface imersiva e acessível, a
 - **GraphQL & Apollo Client**: Consumo inteligente da API do GitHub, realizando buscas granulares de repositórios e estatísticas em tempo real, mantendo um cache local eficiente.
 - **React Hook Form & Zod**: Sistema de formulários leve com validação de esquema robusta.
 
-<h2 id="integrações-de-serviços">🔗 Integrações de Serviços</h2>
+<h2 id="integracoes-de-servicos">🔗 Integrações de Serviços</h2>
 
 O projeto consome dados externos e serviços serverless para funcionalidades dinâmicas:
 
 - **GitHub API (GraphQL)**: Integração com a API do GitHub via Apollo Client para exibir repositórios, métricas e dados de perfil em tempo real.
 - **Web3Forms**: Serviço de mensageria que processa o formulário de contato e envia os dados diretamente para o e-mail.
 
-<h2 id="arquitetura-otimização--performance">⚙️ Arquitetura, Otimização & Performance</h2>
+<h2 id="arquitetura-otimizacao-performance">⚙️ Arquitetura, Otimização & Performance</h2>
 
 - **Single Page Application (SPA)**: Toda a navegação é gerenciada no lado do cliente (client-side) pelo React Router, proporcionando transições instantâneas.
 - **Code Splitting & Lazy Loading**: Uso de React.lazy e Suspense para carregar componentes de rota sob demanda, reduzindo o tamanho inicial do bundle e o tempo de carregamento da primeira página.
@@ -80,5 +81,52 @@ src/
 └── pages/          # Componentes de página que funcionam como rotas (React Router)
 ```
 
-<h2 id="demonstration">📸 Demonstração do Projeto</h2>
 
+<h2 id="demonstracao">📸 Demonstração do Projeto</h2>
+
+### Home 
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop.png)
+<hr>
+
+### Serviços
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/services.png)
+<hr>
+
+### Currículo
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/curriculum-page.png)
+<hr>
+
+### Projetos
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/projects.png)
+<hr>
+
+### Contatos
+![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/contatos.png)
+
+
+
+<h2 id="funcionalidades">✨ Funcionalidades</h2>
+
+- 🌎 Portfólio multilíngue (PT/EN)
+- 🌙 Tema Dark / Light
+- 📱 Design totalmente responsivo
+- 🔍 SEO otimizado
+- 🎬 Animações suaves e interativas
+- 🔗 Integração com GitHub (API GraphQL)
+- ⚡ Cache inteligente
+- 📦 Lazy loading
+- ♿ Acessibilidade (WAI-ARIA e navegação por teclado)
+
+
+
+<h2 id="links">🔗 Links</h2>
+- 🌐 Portfólio: https://matheusscarvalho-dev.onrender.com/
+- 💻 Repositório: https://github.com/matheusscarvalho1/portfolio/
+- 💼 LinkedIn: https://www.linkedin.com/in/matheusscarvalho/
+
+  ## 👤 Autor
+
+**Matheus de Souza Carvalho**  
+Full Stack Developer | Software Engineer  
+
+⭐ Se este projeto foi útil, considere deixar uma estrela no repositório!
