@@ -138,33 +138,46 @@ src/
 <h2 id="demonstracao">📸 Demonstração do Projeto</h2>
 
 ### Home 
+<p>Página inicial com visão geral do portfólio, introdução e navegação rápida</p>
+
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/home-desktop-02.png)
 <hr>
 
 ### Serviços
+<p>Lista de serviços com que já trabalhei, tanto profissionalmente quanto em projetos pessoais</p>
+
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/services.png)
 <hr>
 
 ### Currículo
+<p>Mostra minha experiência profissional, habilidades e histórico acadêmico</p>
+
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/curriculum-page.png)
 <hr>
 
 ### Projetos
+<p>Galeria de projetos pessoais que desenvolvi, com detalhes técnicos e links para os repositórios</p>
+
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/projects.png)
 <hr>
 
 ### Contatos
+<p>Formulário de contato integrado com Web3Forms para envio direto de e-mails</p>
+
 ![Logo of the project](https://github.com/matheusscarvalho1/portfolio/blob/main-v2.0/public/assets/docs/screenshots/contatos.png)
 
 
 
 
 <h2 id="links">🔗 Links</h2>
+
 - 🌐 Portfólio: https://matheusscarvalho-dev.onrender.com/
+  
 - 💻 Repositório: https://github.com/matheusscarvalho1/portfolio/
+  
 - 💼 LinkedIn: https://www.linkedin.com/in/matheusscarvalho/
 
-  ## 👤 Autor
+## 👤 Autor
 
 **Matheus de Souza Carvalho**  
 Full Stack Developer | Software Engineer  
